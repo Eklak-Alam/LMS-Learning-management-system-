@@ -9,8 +9,16 @@ import {
   Phone, 
   Menu, 
   X,
-  Calendar
 } from 'lucide-react'
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaTwitter,
+  FaLinkedinIn,
+  FaYoutube,
+  FaWhatsapp,
+  FaGoogle,
+} from 'react-icons/fa';
 import Link from 'next/link'
 
 export default function Navbar() {
@@ -33,6 +41,17 @@ export default function Navbar() {
     { name: 'About', icon: <Info size={18} />, href: '/about' },
     { name: 'Contact', icon: <Phone size={18} />, href: '/contact' }
   ]
+
+  // Social media links
+  const socialLinks = [
+    { icon: <FaWhatsapp />, href: 'https://wa.me/yourNumber', label: 'WhatsApp', color: 'bg-green-500' },
+    { icon: <FaInstagram />, href: 'https://instagram.com/yourProfile', label: 'Instagram', color: 'bg-pink-600' },
+    { icon: <FaYoutube />, href: 'https://youtube.com/yourChannel', label: 'YouTube', color: 'bg-red-600' },
+    { icon: <FaGoogle />, href: 'https://google.com', label: 'Google', color: 'bg-blue-500' },
+    { icon: <FaTwitter />, href: 'https://twitter.com/yourHandle', label: 'Twitter', color: 'bg-blue-400' },
+    { icon: <FaLinkedinIn />, href: 'https://linkedin.com/in/yourProfile', label: 'LinkedIn', color: 'bg-blue-700' },
+    { icon: <FaFacebookF />, href: 'https://facebook.com/yourPage', label: 'Facebook', color: 'bg-blue-600' },
+  ];
 
   const navbarVariants = {
     hidden: { opacity: 0, y: -20 },
@@ -76,7 +95,7 @@ export default function Navbar() {
         scrolled ? 'bg-gray-900 shadow-lg border-b border-gray-800' : 'bg-gray-900/80 backdrop-blur-sm'
       }`}
     >
-      <div className="max-w-7xl mx-auto flex items-center justify-between">
+      <div className="max-w-7xl mx-auto flex items-center justify-between p-2">
         {/* Logo */}
         <Link href="/" passHref>
           <motion.div 
@@ -106,19 +125,27 @@ export default function Navbar() {
           ))}
         </div>
 
-        {/* Schedule Call Button - Desktop */}
-        <div className="hidden lg:block">
-          <Link href="/schedule-call" passHref>
-            <motion.div
-              className="flex items-center bg-gradient-to-r from-purple-600 to-purple-400 text-white px-5 py-2.5 rounded-lg hover:shadow-lg hover:shadow-purple-700/30 transition-all"
-              whileHover={{ scale: 1.05 }}
+        {/* Social Media Links - Desktop */}
+        <div className="hidden lg:flex items-center space-x-4 ml-6">
+          {socialLinks.map((social, idx) => (
+            <motion.a
+              key={social.icon}
+              href={social.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`Link to ${social.href}`}
+              className={`${social.color} text-white p-2 rounded-full transition-colors duration-200`}
+              whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.05 * idx }}
             >
-              <Calendar size={18} className="mr-2" />
-              Schedule Call
-            </motion.div>
-          </Link>
+              {social.icon}
+            </motion.a>
+          ))}
         </div>
+
 
         {/* Mobile Menu Button */}
         <motion.button
@@ -153,21 +180,25 @@ export default function Navbar() {
                   </motion.div>
                 </Link>
               ))}
-              
-              <motion.div
-                variants={mobileItemVariants}
-                className="pt-2 mt-2"
-              >
-                <Link href="/schedule-call" passHref>
-                  <motion.div
-                    className="flex items-center justify-center w-full py-3 rounded-lg bg-gradient-to-r from-purple-600 to-purple-400 text-white"
+              {/* Social Media Links - Mobile */}
+              <div className="flex justify-center space-x-6 mt-4 pt-2 border-t border-gray-700">
+                {socialLinks.map((social, idx) => (
+                  <motion.a
+                    key={social.name}
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-400 hover:text-purple-400 transition-colors"
+                    whileHover={{ scale: 1.2, rotate: 8 }}
                     whileTap={{ scale: 0.95 }}
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.1 * idx }}
                   >
-                    <Calendar size={16} className="mr-2" />
-                    Schedule Call
-                  </motion.div>
-                </Link>
-              </motion.div>
+                    {social.icon}
+                  </motion.a>
+                ))}
+              </div>
             </div>
           </motion.div>
         )}

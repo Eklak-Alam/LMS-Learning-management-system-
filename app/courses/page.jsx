@@ -1,6 +1,6 @@
 'use client'
 import { motion, AnimatePresence } from 'framer-motion'
-import { ArrowRight, Star, Loader2, Search, ChevronRight } from 'lucide-react'
+import { Loader2, Search, ChevronRight } from 'lucide-react'
 import { useState, useEffect } from 'react'
 import CourseData from '@/db/CourseData'
 import Link from 'next/link'
@@ -163,7 +163,7 @@ const CoursesPage = () => {
                         <h3 className="text-xl font-bold mb-3 text-white">{course.title}</h3>
                         <p className="text-gray-300 mb-6 line-clamp-2">{course.description}</p>
                         
-                        <Link href={`/courses/${course.title}`} passHref>
+                        <Link href={`/courses/${course.slug}`} passHref>
                           <motion.div
                             whileHover={{ x: 5 }}
                             className="flex items-center text-purple-400 hover:text-purple-300 transition-colors cursor-pointer"
