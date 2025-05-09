@@ -1,8 +1,9 @@
 'use client'
 import { motion, AnimatePresence } from 'framer-motion'
-import { ArrowRight, Star, Loader2, ChevronRight } from 'lucide-react'
+import { Loader2, ChevronRight } from 'lucide-react'
 import { useState, useEffect } from 'react'
 import CourseData from '@/db/CourseData'
+import Link from 'next/link'
 
 const CoursePreview = () => {
   const [courses, setCourses] = useState([])
@@ -130,13 +131,15 @@ const CoursePreview = () => {
                         <h3 className="text-xl font-bold mb-3 text-white">{course.title}</h3>
                         <p className="text-gray-300 mb-6 line-clamp-2">{course.description}</p>
                         
-                        <motion.button
-                          whileHover={{ x: 5 }}
-                          className="flex items-center text-purple-400 hover:text-purple-300 transition-colors"
-                        >
-                          <span className="font-medium">View Course</span>
-                          <ChevronRight size={18} className="ml-1" />
-                        </motion.button>
+                        <Link href={`/courses/${course.slug}`} passHref>
+                          <motion.div
+                            whileHover={{ x: 5 }}
+                            className="flex items-center text-purple-400 hover:text-purple-300 transition-colors cursor-pointer"
+                          >
+                            <span className="font-medium">View Details</span>
+                            <ChevronRight size={18} className="ml-1" />
+                          </motion.div>
+                        </Link>
                       </div>
                     </motion.div>
                   </motion.div>
