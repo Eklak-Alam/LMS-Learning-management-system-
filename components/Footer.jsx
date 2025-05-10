@@ -18,7 +18,6 @@ import {
   FaStar,
 } from 'react-icons/fa';
 import Link from 'next/link';
-import Image from 'next/image';
 
 export default function PremiumFooter() {
   const [email, setEmail] = useState('');
@@ -118,7 +117,7 @@ export default function PremiumFooter() {
   return (
     <footer 
       ref={footerRef}
-      className="bg-gradient-to-b from-gray-900 to-black text-white pt-16 pb-10 relative overflow-hidden"
+      className="bg-white text-black pt-16 pb-10 relative overflow-hidden"
     >
       {/* Animated Background Pattern */}
       <div className="absolute inset-0 z-0 opacity-5">
@@ -163,7 +162,7 @@ export default function PremiumFooter() {
                   ))}
                 </div>
               </div>
-              <p className="text-gray-400 mb-6 leading-relaxed">
+              <p className="text-gray-900 mb-6 leading-relaxed">
                 Elevating digital experiences since 2010. Our premium solutions drive growth and innovation for businesses across all industries.
               </p>
               
@@ -174,7 +173,7 @@ export default function PremiumFooter() {
                   {contactInfo.map((item, idx) => (
                     <li key={idx} className="flex items-start text-sm">
                       <span className="text-purple-400 mt-1 mr-3">{item.icon}</span>
-                      <span className="text-gray-300">{item.info}</span>
+                      <span className="text-gray-900">{item.info}</span>
                     </li>
                   ))}
                 </ul>
@@ -195,7 +194,7 @@ export default function PremiumFooter() {
                     >
                       <Link
                         href={link.href}
-                        className="text-gray-300 hover:text-purple-400 transition-colors duration-300 flex items-center"
+                        className="text-gray-900 hover:text-purple-400 transition-colors duration-300 flex items-center"
                       >
                         <span className="mr-2 text-xs">►</span>
                         {link.name}
@@ -272,7 +271,7 @@ export default function PremiumFooter() {
             variants={itemVariants}
             className="flex flex-col md:flex-row justify-between items-center gap-6 mb-10"
           >
-            <div className="text-gray-400 text-sm">
+            <div className="text-gray-900 text-sm">
               Trusted by over 10,000+ Students worldwide
             </div>
             <div className="flex flex-wrap justify-center gap-3">
@@ -298,10 +297,10 @@ export default function PremiumFooter() {
             variants={itemVariants} 
             className="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4"
           >
-            <div className="text-sm text-gray-500">
+            <div className="text-sm text-gray-900">
               © {new Date().getFullYear()} YourBrand™. All rights reserved.
             </div>
-            <div className="flex flex-wrap gap-6 text-xs text-gray-500">
+            <div className="flex flex-wrap gap-6 text-xs text-gray-900">
               {legalLinks.map((link, idx) => (
                 <Link
                   key={idx}

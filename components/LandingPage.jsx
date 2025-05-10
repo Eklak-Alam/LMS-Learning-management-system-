@@ -1,44 +1,22 @@
-'use client'
+'use client';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { 
-  BookOpen, 
-  ChevronRight,
-  Star,
-  Users,
-  Code,
-  ArrowRight,
-  CheckCircle,
-  Play
-} from 'lucide-react';
+import { FiPlay, FiArrowRight } from 'react-icons/fi';
 
 export default function LandingPage() {
-  const [isHovered, setIsHovered] = useState(false);
+  const [hoveredCard, setHoveredCard] = useState(null);
 
-  // Animation variants
   const fadeIn = {
     hidden: { opacity: 0 },
-    visible: { 
-      opacity: 1,
-      transition: { duration: 0.6, ease: "easeOut" }
-    }
+    visible: { opacity: 1, transition: { duration: 0.8 } }
   };
 
   const fadeInUp = {
-    hidden: { opacity: 0, y: 20 },
+    hidden: { opacity: 0, y: 30 },
     visible: { 
       opacity: 1, 
-      y: 0,
-      transition: { duration: 0.6, ease: "easeOut" }
-    }
-  };
-
-  const fadeInLeft = {
-    hidden: { opacity: 0, x: 20 },
-    visible: { 
-      opacity: 1, 
-      x: 0,
-      transition: { duration: 0.6, ease: "easeOut" }
+      y: 0, 
+      transition: { duration: 0.8, ease: [0.6, -0.05, 0.01, 0.99] } 
     }
   };
 
@@ -48,146 +26,124 @@ export default function LandingPage() {
       opacity: 1,
       transition: {
         staggerChildren: 0.15,
-        delayChildren: 0.1
+        delayChildren: 0.3
       }
     }
   };
 
-  const features = [
-    { icon: <BookOpen size={20} className="text-purple-300" />, text: "100+ Expert-led Courses" },
-    { icon: <Users size={20} className="text-purple-300" />, text: "10,000+ Active Students" },
-    { icon: <Star size={20} className="text-purple-300" />, text: "4.9 Average Rating" },
-    { icon: <Code size={20} className="text-purple-300" />, text: "Hands-on Practical Learning" }
+
+  const stats = [
+    { value: "10K+", label: "Students Enrolled" },
+    { value: "200+", label: "Courses Available" },
+    { value: "98%", label: "Satisfaction Rate" },
+    { value: "24/7", label: "Support Available" }
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-950 to-gray-900 text-white overflow-x-hidden px-2 sm:px-5 pt-3 relative">
-      {/* Background Elements - Enhanced */}
-      <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
-        <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-purple-700/20 rounded-full blur-3xl" />
-        <div className="absolute bottom-1/3 right-1/4 w-96 h-96 bg-purple-600/10 rounded-full blur-3xl" />
-        <div className="absolute top-10 right-10 w-32 h-32 bg-purple-400/10 rounded-full blur-2xl" />
-        <div className="absolute bottom-10 left-10 w-24 h-24 bg-purple-500/10 rounded-full blur-2xl" />
-      </div>
-
-      {/* Hero Section - Image on top for mobile, side-by-side for desktop */}
-      <section className="container mx-auto px-2 sm:px-6 py-10 md:py-20 relative z-10 flex flex-col-reverse lg:flex-row items-center gap-10 lg:gap-20">
-        {/* Left Content */}
-        <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left">
-          <motion.span 
-            className="inline-block px-5 py-2 bg-purple-800/40 text-purple-200 rounded-full text-sm mb-6 backdrop-blur-sm border border-purple-500/30 font-semibold tracking-wide shadow-md"
-            variants={fadeInUp}
-          >
-            IT LEARNING MADE SIMPLE
-          </motion.span>
-
-          <motion.h1 
-            className="text-4xl sm:text-5xl lg:text-7xl font-extrabold mb-6 leading-tight bg-gradient-to-r from-white to-purple-200 bg-clip-text text-transparent drop-shadow-lg"
-            variants={fadeInUp}
-          >
-            Unlock Your <span className="text-purple-400">IT Potential</span>
-          </motion.h1>
-
-          <motion.p 
-            className="text-gray-300 mb-8 text-lg max-w-xl leading-relaxed font-medium"
-            variants={fadeInUp}
-          >
-            Learn the latest tech skills with easy-to-follow courses, hands-on projects, and expert support. Start your journey today!
-          </motion.p>
-
-          {/* Features - visually distinct */}
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-purple-50 text-gray-900 overflow-hidden pt-7">
+      {/* Hero Section */}
+      <div className="container mx-auto px-6 py-16 md:py-24">
+        <div className="flex flex-col lg:flex-row items-center gap-12">
+          {/* Left Content */}
           <motion.div 
-            className="grid grid-cols-2 gap-4 mb-10 w-full max-w-md"
-            variants={staggerContainer}
-          >
-            {features.map((feature, index) => (
-              <motion.div 
-                key={index} 
-                className="flex items-center gap-3 bg-purple-900/40 rounded-xl p-3 border border-purple-500/20 shadow-sm hover:shadow-lg transition-shadow"
-                variants={fadeInLeft}
-                whileHover={{ x: 3 }}
-              >
-                <div className="p-2 bg-purple-700/40 rounded-full border border-purple-400/30">
-                  {feature.icon}
-                </div>
-                <span className="text-gray-200 text-sm font-semibold">{feature.text}</span>
-              </motion.div>
-            ))}
-          </motion.div>
-
-          {/* CTA Buttons */}
-          <motion.div 
-            className="flex flex-col sm:flex-row gap-4 w-full max-w-md justify-center lg:justify-start"
-            variants={fadeInUp}
-          >
-            <motion.button 
-              className="px-8 py-4 bg-gradient-to-r from-purple-600 to-purple-400 rounded-lg font-bold flex items-center justify-center shadow-xl shadow-purple-700/30 text-lg hover:scale-105 transition-transform focus:outline-none focus:ring-2 focus:ring-purple-400"
-              whileHover={{ scale: 1.06 }}
-              whileTap={{ scale: 0.98 }}
-            >
-              <span>Get Started</span>
-              <ChevronRight size={22} className="ml-2" />
-            </motion.button>
-            <motion.button 
-              className="px-8 py-4 bg-purple-950/60 border border-purple-500/40 rounded-lg font-bold text-purple-200 flex items-center justify-center backdrop-blur-sm hover:bg-purple-900/70 transition-colors text-lg"
-              whileHover={{ scale: 1.04 }}
-              whileTap={{ scale: 0.98 }}
-            >
-              <Play size={22} className="mr-2" />
-              <span>Watch Demo</span>
-            </motion.button>
-          </motion.div>
-        </div>
-
-        {/* Right Image - on top for mobile, right for desktop */}
-        <div className="w-full lg:w-1/2 flex justify-center items-center mb-10 pt-5 lg:mb-0">
-          <motion.div 
-            className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-purple-400/30 bg-gradient-to-tr from-purple-800/30 to-transparent"
+            className="w-full lg:w-1/2"
             initial="hidden"
             animate="visible"
-            variants={fadeIn}
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
+            variants={staggerContainer}
           >
-            <div className="absolute inset-0 bg-gradient-to-tr from-purple-800/30 to-transparent z-10 mix-blend-overlay" />
-            <img 
-              src="https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=800&q=80" 
-              alt="Student learning with laptop" 
-              className="w-full h-80 sm:h-96 object-cover rounded-3xl relative z-0 shadow-xl border-2 border-purple-300/30"
-              loading="lazy"
-            />
-            {/* Soft glow */}
-            <div className="absolute -inset-2 rounded-3xl bg-purple-400/20 blur-2xl z-0" />
-            {/* Floating shape */}
-            <motion.div 
-              className="absolute -top-6 -right-6 w-20 h-20 bg-purple-500 rounded-full opacity-60 blur-xl"
-              animate={{ y: [0, -12, 0], transition: { duration: 4, repeat: Infinity } }}
-            />
-            {/* Course list mockup - subtle */}
-            <motion.div 
-              className="absolute top-8 -left-8 bg-white/10 backdrop-blur-md p-3 rounded-lg border border-white/20 shadow-lg w-44 hidden sm:block"
+            <motion.div variants={fadeInUp} className="mb-8 flex justify-center">
+              <span className="inline-block px-4 text-lg py-1.5 bg-purple-100 text-purple-700 rounded-full font-semibold tracking-wider shadow-sm">
+                WELCOME TO SANAYA
+              </span>
+            </motion.div>
+
+            <motion.h1 
+              className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6"
               variants={fadeInUp}
-              whileHover={{ y: -5 }}
             >
-              <div className="flex items-center justify-between mb-2">
-                <div className="h-2 w-14 bg-purple-300/50 rounded" />
-                <div className="h-2 w-4 bg-purple-300/30 rounded" />
+              Transform Your <span className="text-purple-600">Learning</span> Experience
+            </motion.h1>
+
+            <motion.p 
+              className="text-lg text-gray-600 mb-8 max-w-lg leading-relaxed"
+              variants={fadeInUp}
+            >
+              Sanaya LMS provides cutting-edge learning solutions with personalized pathways, interactive content, and measurable outcomes.
+            </motion.p>
+
+            <motion.div 
+              className="flex flex-col sm:flex-row gap-4 mb-12"
+              variants={fadeInUp}
+            >
+              <button className="px-8 py-4 bg-purple-600 hover:bg-purple-700 text-white rounded-xl font-semibold flex items-center justify-center transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl">
+                <span>Start Learning</span>
+                <FiArrowRight className="ml-2" />
+              </button>
+              <button className="px-8 py-4 border border-purple-300 bg-white text-purple-700 rounded-xl font-semibold flex items-center justify-center transition-all duration-300 hover:bg-purple-50">
+                <FiPlay className="mr-2" />
+                <span>Watch Demo</span>
+              </button>
+            </motion.div>
+
+            <motion.div 
+              className="grid grid-cols-2 sm:grid-cols-4 gap-4"
+              variants={staggerContainer}
+            >
+              {stats.map((stat, index) => (
+                <motion.div 
+                  key={index}
+                  className="bg-white p-4 rounded-xl shadow-sm border border-gray-100"
+                  variants={fadeInUp}
+                  whileHover={{ y: -5, boxShadow: "0 10px 25px -5px rgba(0,0,0,0.1)" }}
+                >
+                  <h3 className="text-2xl font-bold text-purple-600">{stat.value}</h3>
+                  <p className="text-sm text-gray-500">{stat.label}</p>
+                </motion.div>
+              ))}
+            </motion.div>
+          </motion.div>
+
+          {/* Right Image */}
+          <motion.div 
+            className="w-full lg:w-1/2 relative"
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+          >
+            <div className="relative rounded-3xl overflow-hidden shadow-2xl">
+              <div className="absolute inset-0 bg-gradient-to-br from-purple-500/10 to-purple-700/20 z-10"></div>
+              <img
+                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80"
+                alt="Students learning together"
+                width={800}
+                height={600}
+                className="w-full h-auto object-cover"
+                priority
+              />
+            </div>
+            
+            {/* Floating Card */}
+            <motion.div 
+              className="absolute -bottom-8 -left-8 bg-white p-6 rounded-xl shadow-xl border border-gray-100 w-64"
+              initial={{ y: 50, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: 0.6, duration: 0.5 }}
+              whileHover={{ scale: 1.05 }}
+            >
+              <div className="flex items-center mb-3">
+                <div className="flex -space-x-2">
+                  {[1,2,3].map((item) => (
+                    <div key={item} className="w-8 h-8 rounded-full bg-purple-100 border-2 border-white"></div>
+                  ))}
+                </div>
+                <span className="ml-2 text-sm font-medium text-gray-600">+12 mentors</span>
               </div>
-              <div className="space-y-2">
-                {[1, 2, 3].map((item) => (
-                  <div key={item} className="flex items-center gap-2 bg-white/5 p-2 rounded-md">
-                    <div className="w-2 h-2 rounded-full bg-purple-400" />
-                    <div className="space-y-1">
-                      <div className="h-1.5 w-16 bg-purple-300/40 rounded" />
-                      <div className="h-1 w-10 bg-purple-300/20 rounded" />
-                    </div>
-                  </div>
-                ))}
-              </div>
+              <h4 className="font-bold text-gray-800 mb-2">Live Mentorship</h4>
+              <p className="text-sm text-gray-500">Weekly sessions with industry experts</p>
             </motion.div>
           </motion.div>
         </div>
-      </section>
+      </div>
     </div>
   );
 }

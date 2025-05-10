@@ -4,99 +4,77 @@ import { Play, Star, Users } from 'lucide-react'
 
 const Trusted = () => {
   return (
-    <section className="relative py-24 px-4 sm:px-6 overflow-hidden bg-gray-900">
-      {/* Background with subtle animated elements */}
-      <div className="absolute inset-0 z-0 overflow-hidden">
-        <div className="absolute inset-0 bg-[url('/classroom-bg.jpg')] bg-cover bg-center opacity-15" />
-        <div className="absolute inset-0 bg-gradient-to-t from-purple-950/95 via-purple-950/80 to-purple-950/95" />
-        
-        {/* Animated decorative elements */}
-        <motion.div 
-          className="absolute top-1/4 left-1/4 w-40 h-40 bg-purple-700/20 rounded-full blur-3xl"
-          animate={{
-            scale: [1, 1.2, 1],
-            opacity: [0.7, 1, 0.7]
-          }}
-          transition={{
-            duration: 8,
-            repeat: Infinity,
-            ease: "easeInOut"
-          }}
+    <section className="relative py-24 px-4 sm:px-6 bg-white text-gray-900">
+      {/* Background Image with opacity */}
+      <div className="absolute top-0 left-0 w-full h-full bg-cover bg-center z-0">
+        <img 
+          src="https://www.thecttl.org/wp-content/uploads/2020/12/Parent-Tips-Talking-about-grades-scaled.jpg" 
+          alt="Background" 
+          className="w-full h-full object-cover opacity-60" // Adding opacity to image
         />
       </div>
 
       <div className="max-w-5xl mx-auto relative z-10">
-        {/* Trusted By Section with Student Count */}
+        {/* TRUSTED BY Badge */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          viewport={{ once: true, margin: "-50px" }}
-          className="text-center mb-16"
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="text-center mb-12"
         >
-          <div className="inline-flex items-center bg-purple-900/40 backdrop-blur-sm px-6 py-3 rounded-full border border-purple-500/30 mb-4">
-            <Users className="w-5 h-5 text-purple-300 mr-2" />
-            <span className="text-purple-300 font-medium">TRUSTED BY 25,000+ STUDENTS</span>
+          <div className="inline-flex items-center bg-white/80 backdrop-blur-md px-5 py-2 rounded-full border border-gray-200 shadow-sm mb-4">
+            <Users className="w-5 h-5 text-purple-600 mr-2" />
+            <span className="text-gray-700 font-medium tracking-wide">TRUSTED BY 25,000+ STUDENTS</span>
           </div>
-          
-          {/* Student testimonials rating */}
+
+          {/* Rating */}
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ delay: 0.4 }}
-            className="flex justify-center items-center mt-4"
+            transition={{ delay: 0.2 }}
+            className="flex justify-center items-center mt-2"
           >
             <div className="flex mr-2">
-              {[1, 2, 3, 4, 5].map((star) => (
-                <Star 
-                  key={star}
-                  className="w-5 h-5 text-yellow-400 fill-yellow-400"
-                />
+              {[1, 2, 3, 4, 5].map((i) => (
+                <Star key={i} className="w-5 h-5 text-yellow-400 fill-yellow-400" />
               ))}
             </div>
-            <span className="text-gray-300">4.9/5 from 2,800+ reviews</span>
+            <span className="text-gray-600 text-sm">4.9/5 rating from 2,800+ reviews</span>
           </motion.div>
         </motion.div>
 
-        {/* Main CTA Section */}
+        {/* Call To Action Section */}
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6 }}
-          viewport={{ once: true, margin: "-50px" }}
+          viewport={{ once: true }}
           className="flex flex-col items-center justify-center text-center"
         >
-          {/* Animated Play Button */}
+          {/* Play Button */}
           <motion.div
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
-            className="group relative w-20 h-20 md:w-24 md:h-24 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center mb-8 cursor-pointer shadow-lg shadow-purple-700/50 hover:shadow-purple-700/70 transition-all"
+            className="group relative w-20 h-20 md:w-24 md:h-24 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center mb-8 cursor-pointer shadow-md hover:shadow-lg transition"
           >
-            <Play className="w-8 h-8 md:w-10 md:h-10 text-white fill-white ml-1 transition-transform group-hover:scale-110" />
-            
-            {/* Pulsing ring effect */}
-            <motion.div 
+            <Play className="w-8 h-8 md:w-10 md:h-10 text-white fill-white ml-1" />
+            {/* Ripple effect */}
+            <motion.div
               className="absolute inset-0 border-2 border-purple-400 rounded-full opacity-0"
-              animate={{
-                scale: [1, 1.3],
-                opacity: [0, 0.5, 0]
-              }}
-              transition={{
-                duration: 2,
-                repeat: Infinity,
-                ease: "easeOut"
-              }}
+              animate={{ scale: [1, 1.3], opacity: [0, 0.4, 0] }}
+              transition={{ duration: 2, repeat: Infinity }}
             />
           </motion.div>
 
-          {/* Headline with animated gradient text */}
+          {/* Headline */}
           <motion.h2
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6 max-w-2xl mx-auto leading-tight"
+            className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 max-w-2xl leading-tight"
           >
-            <span className="bg-gradient-to-r from-white via-purple-200 to-white bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent">
               Start Your Learning Journey Today
             </span>
           </motion.h2>
@@ -106,26 +84,22 @@ const Trusted = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ delay: 0.3 }}
-            className="text-lg text-gray-300 mb-8 max-w-xl mx-auto"
+            className="text-base sm:text-lg text-gray-600 mb-8 max-w-xl"
           >
-            Join thousands of students who have transformed their careers with our courses
+            Empower your future with in-demand tech skills taught by industry experts.
           </motion.p>
 
-          {/* Get Started Button */}
+          {/* CTA Button */}
           <motion.button
-            whileHover={{ 
+            whileHover={{
               scale: 1.05,
               boxShadow: "0 10px 25px -5px rgba(139, 92, 246, 0.4)"
             }}
-            whileTap={{ scale: 0.98 }}
-            className="px-8 py-4 bg-gradient-to-r from-purple-600 to-purple-400 rounded-lg font-medium text-white shadow-xl shadow-purple-700/30 hover:shadow-purple-700/50 transition-all flex items-center"
+            whileTap={{ scale: 0.97 }}
+            className="px-8 py-4 bg-gradient-to-r from-purple-600 to-indigo-500 text-white rounded-lg font-semibold shadow-md flex items-center transition"
           >
             <span>Get Started</span>
-            <svg 
-              className="w-5 h-5 ml-2" 
-              viewBox="0 0 24 24"
-              fill="none"
-            >
+            <svg className="w-5 h-5 ml-2" viewBox="0 0 24 24" fill="none">
               <motion.path
                 d="M5 12H19M19 12L12 5M19 12L12 19"
                 stroke="currentColor"
@@ -140,6 +114,7 @@ const Trusted = () => {
           </motion.button>
         </motion.div>
       </div>
+      
     </section>
   )
 }
