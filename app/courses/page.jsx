@@ -59,12 +59,12 @@ const CoursesPage = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-purple-950 to-gray-900">
+    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
       {/* Hero Section */}
       <section className="relative py-20 px-4 sm:px-6 overflow-hidden">
         <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-purple-700/20 rounded-full blur-3xl" />
-          <div className="absolute bottom-1/3 right-1/4 w-80 h-80 bg-purple-600/10 rounded-full blur-3xl" />
+          <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-blue-100 rounded-full blur-3xl" />
+          <div className="absolute bottom-1/3 right-1/4 w-80 h-80 bg-indigo-100 rounded-full blur-3xl" />
         </div>
         
         <div className="max-w-7xl mx-auto relative z-10">
@@ -75,12 +75,12 @@ const CoursesPage = () => {
             className="text-center"
           >
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              <span className="bg-gradient-to-r from-white to-purple-200 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">
                 Explore All
               </span>{' '}
-              <span className="text-purple-400">Courses</span>
+              <span className="text-indigo-600">Courses</span>
             </h1>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Browse our complete catalog of expert-led programs to find your perfect match
             </p>
           </motion.div>
@@ -103,7 +103,7 @@ const CoursesPage = () => {
               <input
                 type="text"
                 placeholder="Search courses..."
-                className="w-full pl-10 pr-4 py-3 bg-gray-800/50 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 text-white placeholder-gray-400"
+                className="w-full pl-10 pr-4 py-3 bg-white border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent text-gray-800 placeholder-gray-400 shadow-sm"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
               />
@@ -113,17 +113,17 @@ const CoursesPage = () => {
           {/* Courses Grid */}
           {isLoading ? (
             <div className="flex justify-center items-center h-64">
-              <Loader2 className="h-12 w-12 animate-spin text-purple-400" />
+              <Loader2 className="h-12 w-12 animate-spin text-indigo-500" />
             </div>
           ) : filteredCourses.length === 0 ? (
             <div className="text-center py-16">
-              <div className="text-gray-400 text-xl mb-4">
+              <div className="text-gray-500 text-xl mb-4">
                 {searchQuery ? "No courses match your search" : "No courses available"}
               </div>
               {searchQuery && (
                 <button
                   onClick={() => setSearchQuery('')}
-                  className="px-6 py-2 bg-purple-600 rounded-md text-white hover:bg-purple-700 transition-colors"
+                  className="px-6 py-2 bg-indigo-600 rounded-md text-white hover:bg-indigo-700 transition-colors shadow-md"
                 >
                   Clear search
                 </button>
@@ -144,7 +144,7 @@ const CoursesPage = () => {
                     layout
                   >
                     <motion.div
-                      className="h-full bg-gray-800/50 rounded-xl overflow-hidden border border-gray-700/50 backdrop-blur-sm group"
+                      className="h-full bg-white rounded-xl overflow-hidden border border-gray-200 group shadow-md hover:shadow-lg transition-shadow"
                       whileHover="hover"
                       initial="rest"
                       animate="rest"
@@ -157,18 +157,19 @@ const CoursesPage = () => {
                           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                           loading="lazy"
                         />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent" />
                       </div>
 
                       <div className="p-6">
-                        <h3 className="text-xl font-bold mb-3 text-white">{course.title}</h3>
-                        <p className="text-gray-300 mb-6 line-clamp-2">{course.description}</p>
+                        <h3 className="text-xl font-bold mb-3 text-gray-900">{course.title}</h3>
+                        <p className="text-gray-600 mb-6 line-clamp-2">{course.description}</p>
                         
                         <Link href={`/courses/${course.slug}`} passHref>
                           <motion.div
                             whileHover={{ x: 5 }}
-                            className="flex items-center text-purple-400 hover:text-purple-300 transition-colors cursor-pointer"
+                            className="flex items-center text-indigo-600 hover:text-indigo-800 transition-colors cursor-pointer font-medium"
                           >
-                            <span className="font-medium">View Details</span>
+                            <span>View Details</span>
                             <ChevronRight size={18} className="ml-1" />
                           </motion.div>
                         </Link>

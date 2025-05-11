@@ -86,8 +86,8 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto flex items-center justify-between p-2">
         {/* Logo */}
         <Link href="/" className="flex items-center cursor-pointer">
-          <span className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-purple-200 bg-clip-text text-transparent">
-            Skillify
+          <span className="text-2xl font-bold bg-gradient-to-r from-gray-600 to-gray-900 bg-clip-text text-transparent">
+            Sanaya
           </span>
         </Link>
 

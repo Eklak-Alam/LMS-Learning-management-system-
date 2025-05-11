@@ -1,9 +1,21 @@
 'use client';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FaEnvelope, FaUser, FaCommentDots, FaCheckCircle } from 'react-icons/fa';
+import { 
+  FaEnvelope, 
+  FaUser, 
+  FaCommentDots, 
+  FaCheckCircle,
+  FaPhone,
+  FaMapMarkerAlt,
+  FaClock,
+  FaLinkedin,
+  FaTwitter,
+  FaInstagram,
+  FaGithub
+} from 'react-icons/fa';
 
-export default function Page() {
+export default function ContactPage() {
   const [form, setForm] = useState({ name: '', email: '', message: '' });
   const [submitted, setSubmitted] = useState(false);
 
@@ -21,78 +33,225 @@ export default function Page() {
     setTimeout(() => setSubmitted(false), 5000);
   };
 
+  const contactInfo = [
+    {
+      icon: <FaEnvelope className="text-blue-500" size={20} />,
+      title: "Email Us",
+      value: "contact@example.com",
+      link: "mailto:contact@example.com"
+    },
+    {
+      icon: <FaPhone className="text-blue-500" size={20} />,
+      title: "Call Us",
+      value: "+1 (555) 123-4567",
+      link: "tel:+15551234567"
+    },
+    {
+      icon: <FaMapMarkerAlt className="text-blue-500" size={20} />,
+      title: "Visit Us",
+      value: "123 Business Ave, Suite 500, New York",
+      link: "https://maps.google.com"
+    },
+    {
+      icon: <FaClock className="text-blue-500" size={20} />,
+      title: "Working Hours",
+      value: "Mon-Fri: 9am-6pm EST",
+      link: null
+    }
+  ];
+
+  const socialLinks = [
+    {
+      icon: <FaLinkedin size={20} />,
+      name: "LinkedIn",
+      url: "https://linkedin.com",
+      color: "bg-blue-600 hover:bg-blue-700"
+    },
+    {
+      icon: <FaTwitter size={20} />,
+      name: "Twitter",
+      url: "https://twitter.com",
+      color: "bg-blue-400 hover:bg-blue-500"
+    },
+    {
+      icon: <FaInstagram size={20} />,
+      name: "Instagram",
+      url: "https://instagram.com",
+      color: "bg-pink-600 hover:bg-pink-700"
+    },
+    {
+      icon: <FaGithub size={20} />,
+      name: "GitHub",
+      url: "https://github.com",
+      color: "bg-gray-800 hover:bg-gray-900"
+    }
+  ];
+
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-950 to-gray-900 text-white px-4 py-10 flex items-center justify-center">
-      <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, ease: 'easeOut' }}
-        className="bg-purple-900/30 border border-purple-500/20 rounded-2xl p-8 w-full max-w-xl shadow-2xl backdrop-blur-md"
-      >
-        <h2 className="text-3xl font-bold mb-6 text-center text-purple-200">Contact Us</h2>
+    <div className="min-h-screen bg-white text-gray-900 px-4 py-12 pt-20">
+      <div className="max-w-6xl mx-auto">
+        {/* Header */}
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="text-center mb-16"
+        >
+          <h1 className="text-4xl font-bold mb-4">Get in Touch</h1>
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            Have questions or want to work together? We'd love to hear from you.
+          </p>
+        </motion.div>
 
-        {submitted ? (
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          {/* Contact Information */}
           <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            className="flex flex-col items-center justify-center text-center text-green-300"
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="space-y-8"
           >
-            <FaCheckCircle size={48} className="mb-4 text-green-400" />
-            <p className="text-xl font-semibold">Your message has been received!</p>
-            <p className="text-sm text-green-200">We’ll get back to you soon. 😊</p>
+            <h2 className="text-2xl font-semibold">Contact Information</h2>
+            
+            <div className="space-y-6">
+              {contactInfo.map((item, index) => (
+                <div key={index} className="flex items-start">
+                  <div className="p-3 bg-blue-50 rounded-lg mr-4">
+                    {item.icon}
+                  </div>
+                  <div>
+                    <h3 className="font-medium text-gray-800">{item.title}</h3>
+                    {item.link ? (
+                      <a 
+                        href={item.link} 
+                        className="text-blue-600 hover:text-blue-800 transition-colors"
+                      >
+                        {item.value}
+                      </a>
+                    ) : (
+                      <p className="text-gray-600">{item.value}</p>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="pt-6">
+              <h3 className="text-lg font-medium mb-4">Connect With Us</h3>
+              <div className="flex flex-wrap gap-3">
+                {socialLinks.map((social, index) => (
+                  <motion.a
+                    key={index}
+                    href={social.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    whileHover={{ y: -3 }}
+                    whileTap={{ scale: 0.95 }}
+                    className={`${social.color} text-white h-10 w-10 rounded-full flex items-center justify-center transition-all`}
+                    aria-label={social.name}
+                  >
+                    {social.icon}
+                  </motion.a>
+                ))}
+              </div>
+            </div>
           </motion.div>
-        ) : (
-          <form onSubmit={handleSubmit} className="flex flex-col gap-5">
-            <div className="relative">
-              <FaUser className="absolute top-3 left-3 text-purple-400" />
-              <input
-                type="text"
-                name="name"
-                placeholder="Your Name"
-                value={form.name}
-                onChange={handleChange}
-                required
-                className="w-full pl-10 pr-4 py-3 rounded-lg bg-purple-800/30 text-white border border-purple-400/30 focus:outline-none focus:ring-2 focus:ring-purple-500"
-              />
-            </div>
 
-            <div className="relative">
-              <FaEnvelope className="absolute top-3 left-3 text-purple-400" />
-              <input
-                type="email"
-                name="email"
-                placeholder="Your Email"
-                value={form.email}
-                onChange={handleChange}
-                required
-                className="w-full pl-10 pr-4 py-3 rounded-lg bg-purple-800/30 text-white border border-purple-400/30 focus:outline-none focus:ring-2 focus:ring-purple-500"
-              />
-            </div>
+          {/* Contact Form */}
+          <motion.div
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="bg-gray-50 rounded-xl p-8 shadow-sm border border-gray-200"
+          >
+            <h2 className="text-2xl font-semibold mb-6">Send Us a Message</h2>
 
-            <div className="relative">
-              <FaCommentDots className="absolute top-3 left-3 text-purple-400" />
-              <textarea
-                name="message"
-                placeholder="Your Message"
-                value={form.message}
-                onChange={handleChange}
-                required
-                rows="4"
-                className="w-full pl-10 pr-4 py-3 rounded-lg bg-purple-800/30 text-white border border-purple-400/30 focus:outline-none focus:ring-2 focus:ring-purple-500 resize-none"
-              ></textarea>
-            </div>
+            {submitted ? (
+              <motion.div
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                className="flex flex-col items-center justify-center text-center p-8"
+              >
+                <FaCheckCircle size={48} className="mb-4 text-green-500" />
+                <p className="text-xl font-semibold text-gray-800">Message Sent!</p>
+                <p className="text-gray-600 mt-2">
+                  Thank you for reaching out. We'll get back to you soon.
+                </p>
+              </motion.div>
+            ) : (
+              <form onSubmit={handleSubmit} className="space-y-5">
+                <div className="space-y-1">
+                  <label htmlFor="name" className="text-sm font-medium text-gray-700">
+                    Your Name
+                  </label>
+                  <div className="relative">
+                    <FaUser className="absolute top-3 left-3 text-gray-400" />
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      placeholder="John Doe"
+                      value={form.name}
+                      onChange={handleChange}
+                      required
+                      className="w-full pl-10 pr-4 py-2.5 rounded-lg bg-white text-gray-800 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    />
+                  </div>
+                </div>
 
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              type="submit"
-              className="bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 rounded-lg transition-colors"
-            >
-              Send Message
-            </motion.button>
-          </form>
-        )}
-      </motion.div>
+                <div className="space-y-1">
+                  <label htmlFor="email" className="text-sm font-medium text-gray-700">
+                    Email Address
+                  </label>
+                  <div className="relative">
+                    <FaEnvelope className="absolute top-3 left-3 text-gray-400" />
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="your@email.com"
+                      value={form.email}
+                      onChange={handleChange}
+                      required
+                      className="w-full pl-10 pr-4 py-2.5 rounded-lg bg-white text-gray-800 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    />
+                  </div>
+                </div>
+
+                <div className="space-y-1">
+                  <label htmlFor="message" className="text-sm font-medium text-gray-700">
+                    Your Message
+                  </label>
+                  <div className="relative">
+                    <FaCommentDots className="absolute top-3 left-3 text-gray-400" />
+                    <textarea
+                      id="message"
+                      name="message"
+                      placeholder="How can we help you?"
+                      value={form.message}
+                      onChange={handleChange}
+                      required
+                      rows="5"
+                      className="w-full pl-10 pr-4 py-2.5 rounded-lg bg-white text-gray-800 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none"
+                    ></textarea>
+                  </div>
+                </div>
+
+                <motion.button
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                  type="submit"
+                  className="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-4 rounded-lg transition-colors shadow-md"
+                >
+                  Send Message
+                </motion.button>
+              </form>
+            )}
+          </motion.div>
+        </div>
+      </div>
     </div>
   );
 }

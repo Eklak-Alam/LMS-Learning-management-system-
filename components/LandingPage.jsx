@@ -118,7 +118,6 @@ export default function LandingPage() {
                 width={800}
                 height={600}
                 className="w-full h-auto object-cover"
-                priority
               />
             </div>
             
