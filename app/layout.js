@@ -5,43 +5,32 @@ import "./globals.css";
 
 // ✅ SEO Metadata
 export const metadata = {
-  title: "My Awesome Website | Next.js",
-  description: "A fast, SEO-friendly website built with Next.js and deployed on Vercel.",
-  keywords: "next.js, SEO, vercel, static site, personal website",
-  authors: [{ name: "Your Name", url: "https://yourdomain.com" }],
-  creator: "Your Name",
+  title: "Shanaya Training Institute | Best IT & Skill Development Courses",
+  description:
+    "Join Shanaya Training Institute for expert-led courses in web development, programming, digital marketing, and more. 100% practical training with certification.",
+  keywords:
+    "Shanaya Training Institute, IT courses, web development, training institute, coding, skill development, digital marketing",
+  authors: [{ name: "Shanaya Training Institute", url: "https://shanayatraining.com/" }],
+  creator: "Shanaya Training Institute",
   openGraph: {
-    title: "My Awesome Website | Next.js",
-    description: "A fast, SEO-optimized website built with Next.js.",
-    url: "https://yourdomain.com",
-    siteName: "My Awesome Website",
-    images: [
-      {
-        url: "https://yourdomain.com/og-image.jpg", // Optional Open Graph image
-        width: 1200,
-        height: 630,
-        alt: "Website Preview",
-      },
-    ],
+    title: "Shanaya Training Institute | Learn IT Skills & Grow Your Career",
+    description:
+      "Build your career with top-quality IT training in web development, software, and marketing at Shanaya Training Institute.",
+    url: "https://shanayatraining.com/",
+    siteName: "Shanaya Training Institute",
     type: "website",
   },
-  twitter: {
-    card: "summary_large_image",
-    title: "My Awesome Website | Next.js",
-    description: "A fast, SEO-friendly website built with Next.js and deployed on Vercel.",
-    images: ["https://yourdomain.com/og-image.jpg"], // Optional
-  },
-  themeColor: "#ffffff",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        {/* ✅ Best practices for SEO and performance */}
-        {/* <meta charSet="UTF-8" />
+        <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="canonical" href="https://lms-six-weld.vercel.app/" /> */}
+        <link rel="canonical" href="https://shanayatraining.com/" />
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="Shanaya Training Institute" />
       </head>
       <body>
         <Navbar />

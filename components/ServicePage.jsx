@@ -61,6 +61,8 @@ const fadeInUp = {
 };
 
 export default function ServicePage() {
+
+  
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-950 to-gray-900 text-white px-4 py-10">
       {/* Hero Section */}

@@ -19,14 +19,15 @@ import {
   FaLinkedinIn,
   FaYoutube,
   FaWhatsapp,
-  FaGoogle,
 } from 'react-icons/fa'
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
+  const [isMounted, setIsMounted] = useState(false)
 
   useEffect(() => {
+    setIsMounted(true)
     const handleScroll = () => setScrolled(window.scrollY > 20)
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
@@ -44,7 +45,6 @@ export default function Navbar() {
     { icon: <FaWhatsapp />, href: 'https://wa.me/yourNumber', label: 'WhatsApp', color: 'bg-green-500' },
     { icon: <FaInstagram />, href: 'https://instagram.com/yourProfile', label: 'Instagram', color: 'bg-pink-600' },
     { icon: <FaYoutube />, href: 'https://youtube.com/yourChannel', label: 'YouTube', color: 'bg-red-600' },
-    { icon: <FaGoogle />, href: 'https://google.com', label: 'Google', color: 'bg-blue-500' },
     { icon: <FaTwitter />, href: 'https://twitter.com/yourHandle', label: 'Twitter', color: 'bg-blue-400' },
     { icon: <FaLinkedinIn />, href: 'https://linkedin.com/in/yourProfile', label: 'LinkedIn', color: 'bg-blue-700' },
     { icon: <FaFacebookF />, href: 'https://facebook.com/yourPage', label: 'Facebook', color: 'bg-blue-600' },
@@ -76,6 +76,24 @@ export default function Navbar() {
     open: { opacity: 1, x: 0 },
   }
 
+  if (!isMounted) {
+    // Return a simplified version for SSR that matches the client layout
+    return (
+      <nav className="fixed top-0 left-0 w-full z-50 px-4 md:px-6 py-3 bg-white/80 backdrop-blur-sm">
+        <div className="max-w-7xl mx-auto flex items-center justify-between p-2">
+          <Link href="/" className="flex items-center cursor-pointer">
+            <span className="text-2xl font-bold bg-gradient-to-r from-gray-600 to-gray-900 bg-clip-text text-transparent">
+              Shanaya
+            </span>
+          </Link>
+          <button className="lg:hidden text-gray-800">
+            <Menu size={24} />
+          </button>
+        </div>
+      </nav>
+    )
+  }
+
   return (
     <motion.nav
       initial="hidden"
@@ -87,7 +105,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/" className="flex items-center cursor-pointer">
           <span className="text-2xl font-bold bg-gradient-to-r from-gray-600 to-gray-900 bg-clip-text text-transparent">
-            Sanaya
+            Shanaya
           </span>
         </Link>
 
@@ -140,6 +158,7 @@ export default function Navbar() {
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="lg:hidden text-gray-800 hover:text-purple-600 focus:outline-none"
+          aria-label={isOpen ? "Close menu" : "Open menu"}
         >
           {isOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
@@ -164,7 +183,7 @@ export default function Navbar() {
                   <Link
                     href={link.href}
                     className="flex items-center text-gray-800 hover:text-purple-600 transition-colors py-3 px-4 rounded-lg hover:bg-gray-100"
-                    onClick={() => setIsOpen(false)} // Close on click
+                    onClick={() => setIsOpen(false)}
                   >
                     <span className="mr-3">{link.icon}</span>
                     <span>{link.name}</span>

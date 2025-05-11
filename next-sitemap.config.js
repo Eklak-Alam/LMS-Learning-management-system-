@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-    siteUrl: "https://lms-six-weld.vercel.app/",
+    siteUrl: "https://shanayatraining.com/",
     generateRobotsTxt: true,
   };
   

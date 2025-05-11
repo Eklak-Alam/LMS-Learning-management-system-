@@ -23,6 +23,7 @@ const CoursePreview = () => {
   const loadMoreCourses = () => {
     setVisibleCourses(prev => prev + 3);
   };
+  
 
   const container = {
     hidden: { opacity: 0 },

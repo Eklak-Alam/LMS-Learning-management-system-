@@ -1,10 +1,15 @@
 'use client';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { FiPlay, FiArrowRight } from 'react-icons/fi';
 
 export default function LandingPage() {
   const [hoveredCard, setHoveredCard] = useState(null);
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
   const fadeIn = {
     hidden: { opacity: 0 },
@@ -31,13 +36,41 @@ export default function LandingPage() {
     }
   };
 
-
   const stats = [
     { value: "10K+", label: "Students Enrolled" },
     { value: "200+", label: "Courses Available" },
     { value: "98%", label: "Satisfaction Rate" },
     { value: "24/7", label: "Support Available" }
   ];
+
+  if (!isMounted) {
+    // Return simplified static version for SSR
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-gray-50 to-purple-50 text-gray-900 overflow-hidden pt-7">
+        <div className="container mx-auto px-6 py-16 md:py-24">
+          <div className="flex flex-col lg:flex-row items-center gap-12">
+            <div className="w-full lg:w-1/2">
+              <div className="mb-8 flex justify-center">
+                <span className="inline-block px-4 text-lg py-1.5 bg-purple-100 text-purple-700 rounded-full font-semibold tracking-wider shadow-sm">
+                  WELCOME TO SHANAYA
+                </span>
+              </div>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+                Transform Your <span className="text-purple-600">Learning</span> Experience
+              </h1>
+              <p className="text-lg text-gray-600 mb-8 max-w-lg leading-relaxed">
+                Shanaya LMS provides cutting-edge learning solutions with personalized pathways, interactive content, and measurable outcomes.
+              </p>
+            </div>
+            <div className="w-full lg:w-1/2">
+              {/* Placeholder for image */}
+              <div className="bg-gray-200 w-full h-64 rounded-3xl"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-purple-50 text-gray-900 overflow-hidden pt-7">
@@ -53,7 +86,7 @@ export default function LandingPage() {
           >
             <motion.div variants={fadeInUp} className="mb-8 flex justify-center">
               <span className="inline-block px-4 text-lg py-1.5 bg-purple-100 text-purple-700 rounded-full font-semibold tracking-wider shadow-sm">
-                WELCOME TO SANAYA
+                WELCOME TO SHANAYA
               </span>
             </motion.div>
 
@@ -68,7 +101,7 @@ export default function LandingPage() {
               className="text-lg text-gray-600 mb-8 max-w-lg leading-relaxed"
               variants={fadeInUp}
             >
-              Sanaya LMS provides cutting-edge learning solutions with personalized pathways, interactive content, and measurable outcomes.
+              Shanaya LMS provides cutting-edge learning solutions with personalized pathways, interactive content, and measurable outcomes.
             </motion.p>
 
             <motion.div 
@@ -118,6 +151,7 @@ export default function LandingPage() {
                 width={800}
                 height={600}
                 className="w-full h-auto object-cover"
+                loading="lazy"
               />
             </div>
             
