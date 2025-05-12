@@ -35,7 +35,7 @@ export default function WhatsAppFloat() {
           onHoverStart={() => setIsHovering(true)}
           onHoverEnd={() => setIsHovering(false)}
         >
-          <FaWhatsapp className="text-2xl md:text-3xl" />
+          <FaWhatsapp className="text-3xl md:text-4xl" />
         </motion.button>
 
         {/* Hover message - now appears to the right */}

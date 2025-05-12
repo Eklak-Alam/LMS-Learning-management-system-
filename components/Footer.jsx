@@ -65,14 +65,11 @@ export default function PremiumFooter() {
     { name: 'Courses', href: '/courses' },
     { name: 'About', href: '/about' },
     { name: 'Contact', href: '/contact' },
-    { name: 'Blog', href: '/blog' },
-    { name: 'FAQ', href: '/faq' },
   ];
 
   const legalLinks = [
     { name: 'Privacy Policy', href: '/privacy' },
     { name: 'Terms of Service', href: '/terms' },
-    { name: 'Cookie Policy', href: '/cookies' },
   ];
 
   const socialIcons = [
@@ -275,7 +272,7 @@ export default function PremiumFooter() {
           className="pt-10 mt-10 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4"
         >
           <div className="text-sm text-gray-400">
-            © {year} EduHub. All rights reserved.
+            © {year} EduHub. All rights reserved, Created By Eklak
           </div>
           <div className="flex flex-wrap justify-center gap-4 text-sm text-gray-400">
             {legalLinks.map((link, idx) => (

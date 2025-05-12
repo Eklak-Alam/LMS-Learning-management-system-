@@ -99,9 +99,9 @@ export default function Navbar() {
       initial="hidden"
       animate="visible"
       variants={navbarVariants}
-      className={`fixed top-0 left-0 w-full z-50 px-4 md:px-6 py-3 transition-all duration-300 ${scrolled ? 'bg-white shadow-lg border-b border-gray-300' : 'bg-white/80 backdrop-blur-sm'}`}
+      className={`fixed top-0 left-0 w-full z-50 px-4 md:px-6 py-2 transition-all duration-300 ${scrolled ? 'bg-white shadow-lg border-b border-gray-300' : 'bg-white/80 backdrop-blur-sm'}`}
     >
-      <div className="max-w-7xl mx-auto flex items-center justify-between p-2">
+      <div className="max-w-8xl mx-auto flex items-center justify-between p-2">
         {/* Logo */}
         <Link href="/" className="flex items-center cursor-pointer">
           <span className="text-2xl font-bold bg-gradient-to-r from-gray-600 to-gray-900 bg-clip-text text-transparent">
@@ -124,7 +124,7 @@ export default function Navbar() {
         </div>
 
         {/* Contact Info (Phone & Email) */}
-        <div className="hidden lg:flex items-center space-x-6 ml-4 bg-gray-100 shadow-xl text-sm p-2 rounded-xl">
+        <div className="hidden lg:flex items-center space-x-6 ml-4 p-2 rounded-xl">
           <a href="mailto:eklakalam420@gmail.com" className="text-gray-800 hover:text-purple-600 flex items-center space-x-2">
             <span>eklakalam420@gmail.com</span>
           </a>
