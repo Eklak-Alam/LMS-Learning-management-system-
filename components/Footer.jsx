@@ -72,7 +72,7 @@ export default function PremiumFooter() {
   ];
 
   const socialIcons = [
-    { icon: <FaWhatsapp />, href: '/', label: 'WhatsApp', color: 'bg-green-500 hover:bg-green-600' },
+    { icon: <FaWhatsapp />, href: 'https://wa.me/919990111835', label: 'WhatsApp', color: 'bg-green-500 hover:bg-green-600' },
     { icon: <FaInstagram />, href: 'https://www.instagram.com/shanayatraininginstitute?igsh=MW84MHV6ZnRrb2F2Nw==', label: 'Instagram', color: 'bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700' },
     { icon: <FaYoutube />, href: 'https://www.youtube.com/@shanayatraining', label: 'YouTube', color: 'bg-red-600 hover:bg-red-700' },
     { icon: <FaLinkedinIn />, href: 'https://www.linkedin.com/company/shanaya-training-institute-pvt-ltd/', label: 'LinkedIn', color: 'bg-blue-700 hover:bg-blue-800' },
@@ -82,7 +82,7 @@ export default function PremiumFooter() {
   const contactInfo = [
     { icon: <FaMapMarkerAlt />, info: 'Shanti Nagar, Near Newaji Tola, Chapra Pin 841301', label: 'Address' },
     { icon: <FaPhone />, info: '+91 9990111835', label: 'Phone' },
-    { icon: <FaEnvelope />, info: 'contact@eduhub.com', label: 'Email' },
+    { icon: <FaEnvelope />, info: 'sawrabh20009@gmail.com', label: 'Email' },
     { icon: <FaClock />, info: 'Mon to Sat 9 am to 6pm IST', label: 'Hours' },
   ];
 

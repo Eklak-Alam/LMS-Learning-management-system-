@@ -86,7 +86,7 @@ const FAQ = () => {
 
         <div className="text-center mt-12">
           <p className="text-gray-700 mb-4">Still have questions? We're here to help!</p>
-          <Link href="/contact">
+          <Link href="mailto:sawrabh20009@gmail.com">
             <button className="inline-block bg-purple-600 hover:bg-purple-700 text-white font-semibold px-6 py-3 rounded-full shadow-md transition-all focus:outline-none focus:ring-2 focus:ring-purple-400">
               Contact Support
             </button>

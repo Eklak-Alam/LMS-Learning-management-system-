@@ -38,8 +38,8 @@ export default function ContactPage() {
     {
       icon: <FaEnvelope className="text-blue-500" size={20} />,
       title: "Email Us",
-      value: "contact@example.com",
-      link: "mailto:contact@example.com"
+      value: "sawrabh20009@gmail.com",
+      link: "mailto:sawrabh20009@gmail.com"
     },
     {
       icon: <FaPhone className="text-blue-500" size={20} />,

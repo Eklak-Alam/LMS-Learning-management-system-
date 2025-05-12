@@ -400,7 +400,7 @@ const CourseData = [
   {
     id: 5,
     title: "Online SP3D-Electrical & Instrumentation Training ",
-    slug: "online-sp2d-electrical-instrumentation-training ",
+    slug: "online-electrical-instrumentation-training",
     description: "",
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeuFetDiXjPfdm7lEzHdcovTyZbfze61mfZA&s",
     duration: "30 Days",

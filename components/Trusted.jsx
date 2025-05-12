@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import { Play, Star, Users } from 'lucide-react'
 
 const Trusted = () => {
+
   return (
     <section className="relative py-24 px-4 sm:px-6 bg-white text-gray-900">
       {/* Background Image with opacity */}
@@ -98,7 +99,7 @@ const Trusted = () => {
             whileTap={{ scale: 0.97 }}
             className="px-8 py-4 bg-gradient-to-r from-purple-600 to-indigo-500 text-white rounded-lg font-semibold shadow-md flex items-center transition"
           >
-            <span>Get Started</span>
+            <a href='/courses'>Get Started</a>
             <svg className="w-5 h-5 ml-2" viewBox="0 0 24 24" fill="none">
               <motion.path
                 d="M5 12H19M19 12L12 5M19 12L12 19"

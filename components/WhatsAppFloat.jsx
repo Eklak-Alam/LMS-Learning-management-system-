@@ -14,7 +14,7 @@ export default function WhatsAppFloat() {
 
   if (!mounted) return null;
 
-  const phoneNumber = "7070691178"; // Replace with your number
+  const phoneNumber = "919990111835"; // Replace with your number
   const message = "Hello, I have a question about your courses!";
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
   

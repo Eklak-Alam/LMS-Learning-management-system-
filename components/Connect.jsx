@@ -84,11 +84,11 @@ const Connect = () => {
               <div className="space-y-4 text-gray-700">
                 <div>
                   <p className="font-medium">Email</p>
-                  <a href="mailto:info@edulearn.com" className="text-blue-600 hover:underline">info@edulearn.com</a>
+                  <a href="mailto:sawrabh20009@gmail.com" className="text-blue-600 hover:underline">sawrabh20009@gmail.com</a>
                 </div>
                 <div>
                   <p className="font-medium">Phone</p>
-                  <a href="tel:+18001234567" className="text-blue-600 hover:underline">+91 9990111835</a>
+                  <a href="tel:+919990111835" className="text-blue-600 hover:underline">+91 9990111835</a>
                 </div>
                 <div>
                   <p className="font-medium">Address</p>

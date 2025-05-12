@@ -141,11 +141,11 @@ const CourseDetail = ({ params }) => {
                     ))}
                   </div>
                   <div className="mt-6 space-y-3">
-                    <a href={`https://wa.me/${course.meta?.contact?.whatsapp?.replace(/\D/g, '')}`} className="flex items-center justify-center gap-2 w-full py-3 bg-green-600 hover:bg-green-700 rounded-md text-white transition-colors shadow-md">
+                    <a href='https://wa.me/9990111835' className="flex items-center justify-center gap-2 w-full py-3 bg-green-600 hover:bg-green-700 rounded-md text-white transition-colors shadow-md">
                       <Phone size={18} />
                       Contact via WhatsApp
                     </a>
-                    <a href={`mailto:${course.meta?.contact?.email}`} className="flex items-center justify-center gap-2 w-full py-3 bg-indigo-600 hover:bg-indigo-700 rounded-md text-white transition-colors shadow-md">
+                    <a href='' className="flex items-center justify-center gap-2 w-full py-3 bg-indigo-600 hover:bg-indigo-700 rounded-md text-white transition-colors shadow-md">
                       <Mail size={18} />
                       Email for Details
                     </a>

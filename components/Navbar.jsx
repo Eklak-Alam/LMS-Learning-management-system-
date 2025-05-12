@@ -31,6 +31,7 @@ export default function Navbar() {
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
+  
 
   const navLinks = [
     { name: 'Home', icon: <Home size={18} />, href: '/' },
@@ -41,7 +42,7 @@ export default function Navbar() {
   ]
 
   const socialLinks = [
-    { icon: <FaWhatsapp />, href: 'https://wa.me/yourNumber', label: 'WhatsApp', color: 'bg-green-500' },
+    { icon: <FaWhatsapp />, href: 'https://wa.me/919990111835', label: 'WhatsApp', color: 'bg-green-500' },
     { icon: <FaInstagram />, href: 'https://www.instagram.com/shanayatraininginstitute?igsh=MW84MHV6ZnRrb2F2Nw==', label: 'Instagram', color: 'bg-pink-600' },
     { icon: <FaYoutube />, href: 'https://www.youtube.com/@shanayatraining', label: 'YouTube', color: 'bg-red-600' },
     { icon: <FaLinkedinIn />, href: 'https://www.linkedin.com/company/shanaya-training-institute-pvt-ltd/', label: 'LinkedIn', color: 'bg-blue-700' },
@@ -123,8 +124,8 @@ export default function Navbar() {
 
         {/* Contact Info (Phone & Email) */}
         <div className="hidden lg:flex items-center space-x-6 ml-4 p-2 rounded-xl">
-          <a href="mailto:eklakalam420@gmail.com" className="text-gray-800 hover:text-purple-600 flex items-center space-x-2">
-            <span>eklakalam420@gmail.com</span>
+          <a href="mailto:sawrabh20009@gmail.com" className="text-gray-800 hover:text-purple-600 flex items-center space-x-2">
+            <span>sawrabh20009@gmail.com</span>
           </a>
           <a href="tel:+1234567890" className="text-gray-800 hover:text-purple-600 flex items-center space-x-2">
             <span>+91 9990111835</span>
