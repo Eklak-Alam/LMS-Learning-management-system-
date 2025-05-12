@@ -4,7 +4,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 import {
   FaFacebookF,
   FaInstagram,
-  FaTwitter,
   FaLinkedinIn,
   FaYoutube,
   FaWhatsapp,
@@ -73,19 +72,18 @@ export default function PremiumFooter() {
   ];
 
   const socialIcons = [
-    { icon: <FaWhatsapp />, href: '#', label: 'WhatsApp', color: 'bg-green-500 hover:bg-green-600' },
-    { icon: <FaInstagram />, href: '#', label: 'Instagram', color: 'bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700' },
-    { icon: <FaYoutube />, href: '#', label: 'YouTube', color: 'bg-red-600 hover:bg-red-700' },
-    { icon: <FaTwitter />, href: '#', label: 'Twitter', color: 'bg-blue-400 hover:bg-blue-500' },
-    { icon: <FaLinkedinIn />, href: '#', label: 'LinkedIn', color: 'bg-blue-700 hover:bg-blue-800' },
-    { icon: <FaFacebookF />, href: '#', label: 'Facebook', color: 'bg-blue-600 hover:bg-blue-700' },
+    { icon: <FaWhatsapp />, href: '/', label: 'WhatsApp', color: 'bg-green-500 hover:bg-green-600' },
+    { icon: <FaInstagram />, href: 'https://www.instagram.com/shanayatraininginstitute?igsh=MW84MHV6ZnRrb2F2Nw==', label: 'Instagram', color: 'bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700' },
+    { icon: <FaYoutube />, href: 'https://www.youtube.com/@shanayatraining', label: 'YouTube', color: 'bg-red-600 hover:bg-red-700' },
+    { icon: <FaLinkedinIn />, href: 'https://www.linkedin.com/company/shanaya-training-institute-pvt-ltd/', label: 'LinkedIn', color: 'bg-blue-700 hover:bg-blue-800' },
+    { icon: <FaFacebookF />, href: 'https://www.facebook.com/share/18nRTrPhuX/', label: 'Facebook', color: 'bg-blue-600 hover:bg-blue-700' },
   ];
 
   const contactInfo = [
-    { icon: <FaMapMarkerAlt />, info: '123 Education St, Learning City', label: 'Address' },
-    { icon: <FaPhone />, info: '+1 (234) 567-8901', label: 'Phone' },
+    { icon: <FaMapMarkerAlt />, info: 'Shanti Nagar, Near Newaji Tola, Chapra Pin 841301', label: 'Address' },
+    { icon: <FaPhone />, info: '+91 9990111835', label: 'Phone' },
     { icon: <FaEnvelope />, info: 'contact@eduhub.com', label: 'Email' },
-    { icon: <FaClock />, info: 'Mon-Fri: 9am-6pm', label: 'Hours' },
+    { icon: <FaClock />, info: 'Mon to Sat 9 am to 6pm IST', label: 'Hours' },
   ];
 
   const footerVariants = {

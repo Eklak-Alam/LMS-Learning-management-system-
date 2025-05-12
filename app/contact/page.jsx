@@ -12,7 +12,8 @@ import {
   FaLinkedin,
   FaTwitter,
   FaInstagram,
-  FaGithub
+  FaGithub,
+  FaYoutube
 } from 'react-icons/fa';
 
 export default function ContactPage() {
@@ -43,19 +44,19 @@ export default function ContactPage() {
     {
       icon: <FaPhone className="text-blue-500" size={20} />,
       title: "Call Us",
-      value: "+1 (555) 123-4567",
-      link: "tel:+15551234567"
+      value: "+91 9990111835",
+      link: "tel:+919990111835"
     },
     {
       icon: <FaMapMarkerAlt className="text-blue-500" size={20} />,
       title: "Visit Us",
-      value: "123 Business Ave, Suite 500, New York",
+      value: "Shanti Nagar, Near Newaji Tola, Chapra Pin 841301",
       link: "https://maps.google.com"
     },
     {
       icon: <FaClock className="text-blue-500" size={20} />,
       title: "Working Hours",
-      value: "Mon-Fri: 9am-6pm EST",
+      value: "Mon-Fri: 9am-6pm IST",
       link: null
     }
   ];
@@ -64,26 +65,20 @@ export default function ContactPage() {
     {
       icon: <FaLinkedin size={20} />,
       name: "LinkedIn",
-      url: "https://linkedin.com",
+      url: "https://www.linkedin.com/company/shanaya-training-institute-pvt-ltd/",
       color: "bg-blue-600 hover:bg-blue-700"
-    },
-    {
-      icon: <FaTwitter size={20} />,
-      name: "Twitter",
-      url: "https://twitter.com",
-      color: "bg-blue-400 hover:bg-blue-500"
     },
     {
       icon: <FaInstagram size={20} />,
       name: "Instagram",
-      url: "https://instagram.com",
+      url: "https://www.instagram.com/shanayatraininginstitute?igsh=MW84MHV6ZnRrb2F2Nw==",
       color: "bg-pink-600 hover:bg-pink-700"
     },
     {
-      icon: <FaGithub size={20} />,
-      name: "GitHub",
-      url: "https://github.com",
-      color: "bg-gray-800 hover:bg-gray-900"
+      icon: <FaYoutube size={20} />,
+      name: "YouTube",
+      url: "https://www.youtube.com/@shanayatraining",
+      color: "bg-red-600 hover:bg-red-700"
     }
   ];
 

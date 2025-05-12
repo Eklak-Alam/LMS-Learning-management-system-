@@ -1,6 +1,6 @@
 'use client'
 import { motion } from 'framer-motion';
-import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn, FaYoutube, FaWhatsapp } from 'react-icons/fa';
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube, FaWhatsapp } from 'react-icons/fa';
 
 const Connect = () => {
   return (
@@ -65,14 +65,13 @@ const Connect = () => {
               <p className="mb-6">Stay connected with us on social media for updates, tips, and special promotions.</p>
               <div className="grid grid-cols-3 gap-4">
                 {[
-                  { icon: <FaFacebookF />, label: 'Facebook' },
-                  { icon: <FaInstagram />, label: 'Instagram' },
-                  { icon: <FaYoutube />, label: 'YouTube' },
-                  { icon: <FaTwitter />, label: 'Twitter' },
-                  { icon: <FaLinkedinIn />, label: 'LinkedIn' },
-                  { icon: <FaWhatsapp />, label: 'WhatsApp' },
+                  { icon: <FaFacebookF />, label: 'Facebook', href: 'https://www.facebook.com/share/18nRTrPhuX/' },
+                  { icon: <FaInstagram />, label: 'Instagram', href: 'https://www.instagram.com/shanayatraininginstitute?igsh=MW84MHV6ZnRrb2F2Nw==' },
+                  { icon: <FaYoutube />, label: 'YouTube', href: 'https://www.youtube.com/@shanayatraining' },
+                  { icon: <FaLinkedinIn />, label: 'LinkedIn', href: 'https://www.linkedin.com/company/shanaya-training-institute-pvt-ltd/' },
+                  { icon: <FaWhatsapp />, label: 'WhatsApp', href: '/' },
                 ].map((item, idx) => (
-                  <a key={idx} href="#" className="flex flex-col items-center bg-white/10 hover:bg-white/20 rounded-lg p-4 transition-all">
+                  <a key={idx} href={item.href} className="flex flex-col items-center bg-white/10 hover:bg-white/20 rounded-lg p-4 transition-all">
                     <div className="text-xl mb-2">{item.icon}</div>
                     <span className="text-sm">{item.label}</span>
                   </a>
@@ -89,14 +88,13 @@ const Connect = () => {
                 </div>
                 <div>
                   <p className="font-medium">Phone</p>
-                  <a href="tel:+18001234567" className="text-blue-600 hover:underline">+1 (800) 123-4567</a>
+                  <a href="tel:+18001234567" className="text-blue-600 hover:underline">+91 9990111835</a>
                 </div>
                 <div>
                   <p className="font-medium">Address</p>
                   <address className="not-italic">
-                    123 Learning Street<br />
-                    Education City, ED 12345<br />
-                    United States
+                  Shanti Nagar, Near Newaji Tola, <br />
+                  Chapra Pin 841301
                   </address>
                 </div>
               </div>

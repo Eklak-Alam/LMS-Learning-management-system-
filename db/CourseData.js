@@ -1,311 +1,529 @@
 const CourseData = [
   {
     id: 1,
-    title: "React for Beginners",
-    slug: "react-for-beginners",
-    description: "Master the fundamentals of React.js including components, state, and hooks to build modern web applications.",
-    image: "https://i.ytimg.com/vi/bMknfKXIFA8/maxresdefault.jpg",
-    duration: "6 weeks",
-    level: "Beginner",
-    category: "Web Development",
-    instructor: "Jane Smith",
-    updated: "May 2024",
+    title: "INDUSTRIAL CONTROL SYSTEM / PROGRAMMABLE LOGIC CONTROLLER (PLC)",
+    slug: "programmable-logic-controller",
+    description: "",
+    image: "https://5.imimg.com/data5/SELLER/Default/2022/12/LP/QN/ML/4747417/programmable-logic-controller-repair-services.jpg",
+    duration: "20 Days ",
+    mode: "Online Live Interactive Training on ZOOM / Google meet.",
     students: 1250,
-    lessons: 24,
+    lessons: 46,
+    available: "Fresh Batch Available.",
     learningPoints: [
-      "Understand React component architecture",
-      "Master useState, useEffect and other essential hooks",
-      "Build interactive UIs with JSX",
-      "Implement React Router for navigation",
-      "State management fundamentals",
-      "Deploy React apps to production"
+      "It will upscale your skills, you will be industry ready and able to join as Instrumentation Design Engineer in any EPC companies worldwide.",
+      "Course Completion Certificate will be provided.",
+      "Placement Assistance and doubt discussion will be provided after training.",
+      "Training Materials will be provided. PLC Interview Questions & Answers",
+      "Free Study Material: PLC Programming Examples",
+      "Practical PLC example ladder logics to test your technical skills on the PLC.",
+      "Interview Assistance will be provided"
     ],
     modules: [
       {
-        title: "Getting Started with React",
-        lessons: 4,
-        description: "Setup development environment and understand core concepts"
+        title: "Introduction to Industrial Control Systems",
+        lessons: 7,
+        description: "Understand the fundamental concepts of Programmable Logic Controllers and associated systems.",
+        covered: [
+          "Introduction to Industrial Control System",
+          "Programmable Logic Controller (PLC)",
+          "Overview of SCADA, DCS & RTU",
+          "Difference between DCS, PLC, and RTU?",
+          "DCS Architecture Vs PLC Architecture",
+          "What is a Human-Machine Interface (HMI)?",
+          "Essential Documents in a PLC System"
+        ]
       },
       {
-        title: "Components & Props",
-        lessons: 5,
-        description: "Build reusable components and manage data flow"
+        title: "PLC Input/Output Cards",
+        lessons: 7,
+        description: "Explore the hardware components of PLC systems and their functionality.",
+        covered: [
+          "PLC Input/Output Modules",
+          "PLC Digital Input and Output Modules",
+          "PLC Analog I/O and Network I/O",
+          "PLC Analog Input Card Resolution Effects on Accuracy",
+          "PLC Analog Input Conversion Formula",
+          "PLC Output Types",
+          "PLC Analog I/O Potential Problems"
+        ]
       },
       {
-        title: "State & Hooks",
+        title: "PLC Logic & Functions",
+        lessons: 8,
+        description: "Develop an understanding of PLC logic and ladder diagrams for beginners.",
+        covered: [
+          "What is a Ladder Diagram?",
+          "Introduction to PLC Ladder Diagrams",
+          "PLC Logic Functions",
+          "PLC Latching Function",
+          "PLC Multiple Outputs Configuration",
+          "Contacts and Coils",
+          "Logic Gates",
+          "PLC Program Examples"
+        ]
+      },
+      {
+        title: "PLC Hardware Design Rules",
+        lessons: 9,
+        description: "Understand standard practices for PLC wiring circuits.",
+        covered: [
+          "Basics of Switches – NO/NC Contact",
+          "What is Sinking & Sourcing?",
+          "Relay Circuits",
+          "Why Normally Closed Contact for Stop Buttons?",
+          "Basics of Fail-safe Circuits & Failsafe Wiring Practices",
+          "PLC Sinking & Sourcing Concept",
+          "PLC Signals Wiring Techniques",
+          "Basics of Permissive and Interlock Circuits",
+          "What is Interposing Relay in a PLC System?"
+        ]
+      },
+      {
+        title: "PLC Programming",
+        lessons: 8,
+        description: "Learn the fundamentals of programming PLCs using ladder diagrams.",
+        covered: [
+          "Basics of Ladder Diagram in PLC Programming",
+          "PLC Programming Languages",
+          "Basics of PLC Programming",
+          "Normally Closed Logic",
+          "PLC Timer Instructions",
+          "PLC Math Instructions",
+          "PLC Memory Mapping & I/O Addressing",
+          "PLC Ladder Logic Example"
+        ]
+      },
+      {
+        title: "PLC Application in Industrial Automation",
         lessons: 6,
-        description: "Master component state management"
+        description: "Apply PLCs in practical industrial automation scenarios.",
+        covered: [
+          "How a PLC Reads the Data from Field Transmitters",
+          "How PLC Controls an ON/OFF Valve?",
+          "How PLC Controls a Motor?",
+          "How to Troubleshoot a PLC System",
+          "How does a PLC do the Scaling for a Sensor?"
+        ]
       },
       {
-        title: "Advanced Patterns",
-        lessons: 5,
-        description: "Context API, custom hooks, and performance optimization"
-      },
-      {
-        title: "Final Project",
-        lessons: 4,
-        description: "Build and deploy a complete React application"
+        title: "Introduction to IIOT and OT Cybersecurity",
+        lessons: 1,
+        description: "Understand the basics of the Industrial Internet of Things and cybersecurity practices in operational technology."
       }
     ],
-    content: `This comprehensive React.js course is designed to take you from complete beginner to confident React developer. We'll start by exploring the fundamental concepts that make React so powerful for building user interfaces.
-
-In the first module, you'll set up your development environment and create your first React application. We'll examine the virtual DOM and understand how React efficiently updates the browser's DOM. You'll learn about the component-based architecture that makes React so flexible and reusable.
-
-The second module dives deep into components and props. You'll learn to break down UI into small, reusable pieces and understand how data flows through a React application. We'll cover both functional and class components (for legacy code understanding), though we'll focus primarily on modern functional components.
-
-Module three introduces state management with hooks. You'll master useState for local component state, useEffect for side effects, and other essential hooks like useContext and useReducer. We'll build several small projects to practice these concepts in realistic scenarios.
-
-The advanced patterns module covers more sophisticated techniques including the Context API for global state, custom hooks for logic reuse, and performance optimization techniques like memoization. You'll learn when and how to use these patterns effectively.
-
-Finally, you'll apply everything you've learned to build a capstone project - a complete React application that you'll deploy to the web. This will give you practical experience with the complete development lifecycle and something impressive for your portfolio.
-
-By the end of this course, you'll have the skills to build interactive, component-based UIs with React and understand the ecosystem well enough to continue learning more advanced concepts.`
+    content: `The demand for skilled PLC professionals continues to grow across industries. This course not only provides you with the technical skills to operate and program PLCs but also sets you on a path to becoming a proficient automation expert. Whether you aim to optimize production lines, manage energy systems, or improve manufacturing processes, the knowledge gained here will be invaluable.` // You can keep or customize this.
   },
   {
     id: 2,
-    title: "Advanced JavaScript Concepts",
-    slug: "advanced-javascript-concepts",
-    description: "Deep dive into JavaScript's powerful features including closures, prototypes, async programming and performance optimization.",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr39uWgjXrx3c13OzHOdEX8Qwwb6RKkp2SHQ&s",
-    duration: "8 weeks",
-    level: "Advanced",
-    category: "Programming",
-    instructor: "Mike Johnson",
-    updated: "April 2024",
-    students: 890,
-    lessons: 32,
+    title: "Online Live AVEVA E3D Instrumentation Training",
+    slug: "online-live-aveva-e3d-instrumentation-training",
+    description: "",
+    image: "https://www.aveva.com/en/training/cloud-training-center/_jcr_content/root/main_container/main-container/responsivegrid/background_container/backgroundCon/column_control/2colpar1/image/.coreimg.png/1731006559829/aveva-e3d-design-model-600x450.png",
+    duration: "30 Days",
+    mode: "Online Live Interactive Training on ZOOM / Google meet.",
+    students: 1200,
+    lessons: 18,
+    available: "Fresh Batch Available. ",
     learningPoints: [
-      "Master JavaScript's execution context",
-      "Understand closures and scope chains",
-      "Work with prototypes and inheritance",
-      "Advanced async patterns with Promises",
-      "Memory management and performance optimization",
-      "Modern ES6+ features in depth"
+      "It will upscale your skills, you will be industry ready and able to join as Instrumentation Design Engineer in any EPC companies worldwide",
+      "Course Completion Certificate will be provided.",
+      "Placement Assistance and doubt discussion will be provided after training. ",
+      "Training Materials will be provided.",
+      "Interview Assistance will be provided ",
     ],
     modules: [
       {
-        title: "Execution Context & Scope",
-        lessons: 6,
-        description: "Understand how JavaScript executes code"
+        title: "Instrumentation Hierarchy & Setup",
+        lessons: 3,
+        description: "Learn how to create a structured instrumentation hierarchy and manage instrument specifications and storage areas.",
+        covered: [
+          "Creating an instrumentation hierarchy",
+          "Setting up and managing default instrument specifications",
+          "Defining storage areas for instruments and data management"
+        ]
       },
       {
-        title: "Functions & Closures",
-        lessons: 5,
-        description: "Master advanced function concepts"
+        title: "Instrumentation Equipment Modelling",
+        lessons: 3,
+        description: "Understand how to place and configure instruments in the 3D model, including tag management and process connections.",
+        covered: [
+          "Placing and modifying instruments in the 3D model",
+          "Understanding instrument tags and attributes",
+          "Configuring process connections and fittings"
+        ]
       },
       {
-        title: "Prototypes & OOP",
-        lessons: 6,
-        description: "JavaScript's unique object model"
+        title: "Cable & Tubing Routing",
+        lessons: 3,
+        description: "Master routing techniques for instrument cables and tubes, and manage connections effectively.",
+        covered: [
+          "Creating and modifying instrument cable trays and routes",
+          "Setting up tubing routes for instruments",
+          "Managing cable and tubing connections"
+        ]
       },
       {
-        title: "Async JavaScript",
-        lessons: 8,
-        description: "Event loop, promises, async/await"
+        title: "Junction Box & Marshalling Panel Configuration",
+        lessons: 3,
+        description: "Learn how to design junction boxes and marshalling panels to ensure efficient signal routing and management.",
+        covered: [
+          "Creating and positioning junction boxes",
+          "Configuring marshalling panels for efficient signal management",
+          "Managing terminal strips and connection points"
+        ]
       },
       {
-        title: "Performance & Optimization",
-        lessons: 7,
-        description: "Write efficient JavaScript code"
+        title: "Instrumentation Loop Diagram Integration",
+        lessons: 3,
+        description: "Generate and verify instrumentation loop diagrams while ensuring compliance with standards.",
+        covered: [
+          "Generating and managing loop diagrams",
+          "Ensuring compliance with instrumentation standards",
+          "Verifying loop connectivity in AVEVA E3D"
+        ]
+      },
+      {
+        title: "Instrumentation Data & Reports",
+        lessons: 3,
+        description: "Extract and organize data for detailed reports including BOMs, layout, and connections.",
+        covered: [
+          "Extracting instrument data for reports",
+          "Managing bill of materials (BOM) for instrumentation systems",
+          "Generating layout and connection reports"
+        ]
       }
     ],
-    content: `This Advanced JavaScript course is designed for developers who already know the basics of JavaScript but want to truly understand how the language works under the hood. You'll explore concepts that are crucial for writing robust, efficient, and maintainable code.
-
-We begin with a deep dive into JavaScript's execution context. You'll learn about the call stack, variable environment, scope chains, and how hoisting really works. This foundational knowledge will help you understand why JavaScript behaves the way it does.
-
-The functions and closures module explores one of JavaScript's most powerful features. You'll understand lexical scoping, closure creation, and practical applications of closures in modern JavaScript development. We'll examine common patterns and potential pitfalls.
-
-JavaScript's prototype-based inheritance model is unlike classical OOP languages. In this module, you'll learn how prototypes work, how to implement inheritance patterns, and how ES6 classes relate to prototypes under the hood. This knowledge is essential for working with complex codebases.
-
-Async programming is where many JavaScript developers struggle. We'll thoroughly examine the event loop, callback queue, microtask queue, and how promises and async/await build on these fundamentals. You'll learn to handle complex async flows with confidence.
-
-Finally, we'll explore performance optimization techniques including memory management, garbage collection, debouncing/throttling, and efficient data structures. You'll learn tools and techniques to profile and improve your JavaScript applications.
-
-This course includes numerous coding exercises, real-world examples, and challenging projects to reinforce your learning. By the end, you'll have the deep understanding needed to tackle complex JavaScript problems and write high-performance code.`
+    content: "The AVEVA E3D Instrumentation Training course provides a comprehensive understanding of designing and managing instrumentation systems using AVEVA Everything3D (E3D). Participants will gain hands-on experience in creating, modifying, and optimizing instrumentation layouts within an intelligent 3D environment. AVEVA E3D Design offers specialized training for electrical and instrumentation engineers, focusing on modelling complex equipment and associated supports. The training content typically includes: Overview of the software's interface, navigation, and basic modelling techniques. Detailed instruction on creating and editing electrical panels, fixtures, and routing cable trays and cableways. Training on integrating electrical and instrumentation designs with AVEVA Instrumentation, including cable creation and management. Guidance on generating and customizing reports from the 3D model, including drawing production and documentation."
   },
   {
     id: 3,
-    title: "UI Design with Figma",
-    slug: "ui-design-with-figma",
-    description: "From wireframes to high-fidelity prototypes - master professional UI/UX design using Figma's powerful tools.",
-    image: "https://i.ytimg.com/vi/P5epIoOJnzU/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBjaf9DLkvr19Ad3hf2ULwqI7rpHA",
-    duration: "5 weeks",
-    level: "Intermediate",
-    category: "Design",
-    instructor: "Sarah Chen",
-    updated: "March 2024",
-    students: 2100,
-    lessons: 20,
+    title: "Online Live Instrumentation Design & Details Engineering Training",
+    slug: "online-live-instrumentation-design-details-engineering-training",
+    description: "",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQcD46Lt6eSimHFfEhI-JZn1MxRcb3i6LBvQ&s",
+    duration: "30 Days",
+    mode: "Online Live Interactive Training on ZOOM / Google meet. ",
+    students: 0,
+    lessons: 55,
+    available: "Fresh Batch Available. ",
     learningPoints: [
-      "Figma interface and core features",
-      "Design systems and component libraries",
-      "Wireframing and prototyping techniques",
-      "Collaboration with developers",
-      "Accessibility best practices",
-      "Handoff and design documentation"
+      "It will upscale your skills, you will be industry ready and able to join as Instrumentation Design Engineer in any EPC companies worldwide.",
+      "Course Completion Certificate will be provided",
+      "Placement Assistance and doubt discussion will be provided after training. ",
+      "Training Materials will be provided. ",
+      "Interview Assistance will be provided "
     ],
     modules: [
       {
-        title: "Figma Fundamentals",
-        lessons: 4,
-        description: "Master Figma's interface and basic tools"
-      },
-      {
-        title: "Wireframing & Layout",
+        title: "Instrumentation Design - An Introduction",
         lessons: 5,
-        description: "Structure applications effectively"
+        description: "An overview of instrumentation design, EPC company roles, and engineering processes.",
+        covered: [
+          "Introduction to Instrumentation Design & Detail Engineering",
+          "Introduction about EPC Company",
+          "The tender & procurement process",
+          "How to do FEED Engineering",
+          "Listing of all Instrumentation Deliverables"
+        ]
       },
       {
-        title: "Visual Design",
+        title: "Work Culture and Starting Work in an EPC Company",
         lessons: 5,
-        description: "Typography, color, and UI components"
+        description: "Learn about inter-department coordination, document flow, and design basis standards.",
+        covered: [
+          "Roles and responsibilities of other disciplines",
+          "Various inputs received from different departments",
+          "Instrument Design document flow",
+          "Codes and Standards",
+          "Discussion of Instrumentation Design Basis"
+        ]
       },
       {
-        title: "Prototyping & Testing",
-        lessons: 4,
-        description: "Create interactive prototypes"
+        title: "Hazardous Areas",
+        lessons: 8,
+        description: "Understanding hazardous area classifications, protection methods, and standards.",
+        covered: [
+          "Definitions",
+          "Different Zones as per IEC standards",
+          "Different Divisions as per NEC standards",
+          "Enclosure Protection class",
+          "Ex-d, Ex-e, Ex-I, Intrinsic safety understanding",
+          "Ingress Protection Rating (IP rating)",
+          "Temperature Class details",
+          "SIL Level Introduction"
+        ]
       },
       {
-        title: "Design Systems",
+        title: "Piping & Instrumentation Diagram (P&ID)",
+        lessons: 8,
+        description: "Learn P&ID symbols, loop types, and signal systems used in instrumentation.",
+        covered: [
+          "P&ID - Introduction",
+          "Abbreviations, Symbols and Legends as per ISA standards",
+          "Line number details description",
+          "Line Class (PMS)",
+          "Close and Open Loops",
+          "Logics and Interlocks",
+          "Electrical and DCS Signals",
+          "ESD/DCS/FGS Signals"
+        ]
+      },
+      {
+        title: "Start Preparation of Project Deliverables",
         lessons: 2,
-        description: "Build reusable component libraries"
+        description: "Create essential documents like instrument index and I/O list.",
+        covered: [
+          "Prepare and Review of Instrument Index",
+          "Prepare and Review of Input/output (I/O) list"
+        ]
+      },
+      {
+        title: "Study of Process Instruments",
+        lessons: 6,
+        description: "Understand key types of process instruments and associated documentation.",
+        covered: [
+          "Pressure Instruments",
+          "Temperature Instruments",
+          "Level Instruments",
+          "Flow Instruments",
+          "Pressure Safety Valve",
+          "Control Valve / ON-Off Valve / Motor Operated Valve"
+        ]
+      },
+      {
+        title: "Study of Instrument Wires and Cables",
+        lessons: 4,
+        description: "Explore wire types, specifications, and cable management documentation.",
+        covered: [
+          "Fundamentals of types of wires and their construction",
+          "Specification of wire and cable",
+          "Interconnection drawing / JB grouping",
+          "Cable / Drum Schedules"
+        ]
+      },
+      {
+        title: "Detailed Design Engineering",
+        lessons: 10,
+        description: "Dive deep into detailed layout plans and field instrumentation documentation.",
+        covered: [
+          "Discussion about Overall Plot plan",
+          "Cutting of sectional drawings",
+          "Instrument Location Plan",
+          "JB Location plan",
+          "Field Instrument Wiring Layout",
+          "Main Cable and Cable Tray Layout",
+          "Field Instrument Air Piping and Tubing Layout",
+          "FGS Instruments Basic discussion",
+          "FGS Instrument Location Plan",
+          "Level Sketch for Level Instruments"
+        ]
+      },
+      {
+        title: "Hook-up Drawings",
+        lessons: 4,
+        description: "Understand and prepare hookup drawings for key instrumentation.",
+        covered: [
+          "Pressure Instruments",
+          "Temperature Instruments",
+          "Flow Instruments",
+          "Level Instruments"
+        ]
+      },
+      {
+        title: "Procurement Support",
+        lessons: 3,
+        description: "Learn the procurement process and document reviews for instrumentation items.",
+        covered: [
+          "Preparation of Material Requisition (MR) / Request for Quotation (RFQ)",
+          "Technical Bid Evaluation (TBE) / Analysis (TBA)",
+          "Vendor Document Review (VDR) / Vendor Print Review"
+        ]
+      },
+      {
+        title: "MTO Preparation for Complete Project",
+        lessons: 1,
+        description: "Understand the process of preparing a Material Take-Off (MTO) for instrumentation.",
+        covered: [
+          "MTO Preparation for complete Project"
+        ]
       }
-    ],
-    content: `This comprehensive Figma course takes you from complete beginner to proficient UI/UX designer. Whether you're a developer looking to improve your design skills or an aspiring designer, this course will give you practical, professional skills.
-
-We begin with Figma fundamentals - you'll learn the interface, tools, and basic workflows. You'll understand frames, constraints, auto layout, and other core features that make Figma so powerful for interface design. We'll cover both the web and desktop apps.
-
-The wireframing module teaches you how to structure applications effectively. You'll learn information architecture principles, common UI patterns, and how to create low-fidelity wireframes that communicate structure without distracting visual details. We'll examine real-world examples from popular apps.
-
-Visual design is where your interfaces come to life. You'll master typography, color theory, spacing systems, and component design. We'll cover accessibility considerations and how to create interfaces that are both beautiful and functional. You'll build a library of common UI components.
-
-Prototyping transforms static designs into interactive experiences. You'll learn to create clickable prototypes with transitions and animations to test user flows. We'll cover usability testing basics and how to gather feedback effectively.
-
-Finally, we'll explore design systems - collections of reusable components, styles, and guidelines that ensure consistency across products. You'll learn how to create and maintain a design system that scales with your team's needs.
-
-Throughout the course, you'll work on a capstone project designing a complete application interface. By the end, you'll have professional-quality work for your portfolio and the skills to tackle real design challenges.`
+    ],    
+    content: ""
   },
-  // Additional courses would follow the same enhanced structure...
   {
     id: 4,
-    title: "Full-Stack Web Development",
-    slug: "full-stack-web-development",
-    description: "Build complete, production-ready web applications with the MERN stack (MongoDB, Express, React, Node.js).",
-    image: "https://i.ytimg.com/vi/R6RX2Zx96fE/maxresdefault.jpg",
-    duration: "10 weeks",
-    level: "Intermediate",
-    category: "Web Development",
-    instructor: "Alex Rodriguez",
-    updated: "June 2024",
-    students: 1800,
-    lessons: 40,
+    title: "Online Live Smart Plant Instrumentation (SPI)-Intools Training",
+    slug: "online-live-smart-plant-instrumentation-spi-intools-training",
+    description: "",
+    image: "https://static.wixstatic.com/media/4dbec6_fd0456983cfd491aa36c30c0009397ff~mv2.jpg/v1/fill/w_640,h_804,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/4dbec6_fd0456983cfd491aa36c30c0009397ff~mv2.jpg",
+    duration: "30 Days",
+    mode: "Online Live Interactive Training on ZOOM / Google meet. ",
+    students: 0,
+    lessons: "25+",
+    available: "Fresh Batch Available. ",
     learningPoints: [
-      "Build RESTful APIs with Express.js",
-      "MongoDB database design and queries",
-      "React frontend architecture",
-      "Authentication with JWT",
-      "Deployment to cloud platforms",
-      "Full-stack application architecture"
+      "It will upscale your skills, you will be industry ready and able to join as Instrumentation Design Engineer in any EPC companies worldwide.",
+      "Course Completion Certificate will be provided",
+      "Placement Assistance and doubt discussion will be provided after training. ",
+      "Training Materials will be provided. ",
+      "Interview Assistance will be provided "
     ],
     modules: [
-      {
-        title: "Node.js & Express Fundamentals",
-        lessons: 8,
-        description: "Build robust backend services"
-      },
-      {
-        title: "MongoDB & Data Modeling",
-        lessons: 8,
-        description: "Database design for web applications"
-      },
-      {
-        title: "React Frontend Development",
-        lessons: 10,
-        description: "Build interactive user interfaces"
-      },
-      {
-        title: "API Integration & Authentication",
-        lessons: 8,
-        description: "Connect frontend to backend securely"
-      },
-      {
-        title: "Deployment & DevOps",
-        lessons: 6,
-        description: "Prepare applications for production"
-      }
     ],
-    content: `This intensive full-stack development course teaches you to build complete web applications from front to back using the popular MERN stack (MongoDB, Express, React, and Node.js). You'll gain the skills needed to develop and deploy production-ready applications.
-
-We begin with Node.js and Express, the foundation of our backend. You'll learn to create robust server applications, handle HTTP requests, implement middleware, and structure your code professionally. We'll cover error handling, logging, and other production concerns from the start.
-
-Database design is crucial for any application. You'll master MongoDB including schema design, CRUD operations, indexing, and aggregation. We'll compare document databases with relational alternatives and discuss when each is appropriate. You'll learn Mongoose for elegant data modeling.
-
-The React module builds on your frontend skills (or teaches them if you're new to React). We'll cover modern React patterns including hooks, context API, and component composition. You'll learn state management strategies for complex applications.
-
-Connecting frontend to backend introduces important architectural considerations. You'll implement RESTful APIs, handle CORS, manage authentication with JWT, and optimize API performance. We'll cover security best practices throughout.
-
-Finally, you'll learn to deploy your full-stack applications. We'll cover containerization with Docker, cloud deployment options, CI/CD pipelines, and monitoring. You'll understand the complete lifecycle from development to production.
-
-The course culminates in a capstone project where you'll design, build, and deploy a complete full-stack application. This will give you hands-on experience with all aspects of modern web development and an impressive portfolio piece.`
+    content: `Now a day’s every company want to work smartly and utilizing advance software to reduce engineering man hours and
+              maintain its all database at a single place which can be easily accessible to all. Smart Plant Instrumentation (SPI) is widely
+              used software worldwide which help us in many ways.
+              We have prepared training session for almost each activity we perform in SPI for different modules. Its our effort to
+              provide you best training on SPI and train your brain to upgrade you as per standards of industry demands.
+              After this training you will be able to work and handle various task provided by your organization. You will be skilled
+              engineer who can work easily on SPI. It can upgrade your resume for recruiter who is really looking for skilled
+              professionals of SPI.
+              Refer below what we will discuss during our Online training Program:
+              1. Introduction about EPC Company work culture
+              2. Where and why, we use SPI?
+              3. What is Smart Plant Instrumentation (SPI)?
+              4. How SPI is being used in Industry?
+              5. Introduction to the course and its requirements
+              6. Following Modules will be covered during Online Training:
+              I. Introduction to the course and its requirements
+              II. How to set up the Smart Plant Instrumentation settings for general use
+              III. Instrument Index and work with Browser view
+              IV. Working on Specification Module and work with Browser View
+              V. How to work with Documents Binder
+              VI. How to Work with Process Module
+              VII. Overview of Calculations and Sizing Activities
+              VIII. Performing wiring operations
+              IX. Generating Loop Drawings
+              X. Hook-Up Drawings and BOM Calculation `
   },
   {
     id: 5,
-    title: "Next.js Crash Course",
-    slug: "nextjs-crash-course",
-    description: "Build blazing fast, SEO-friendly React applications with Next.js framework including static site generation and server-side rendering.",
-    image: "https://i.ytimg.com/vi/T63nY70eZF0/maxresdefault.jpg",
-    duration: "4 weeks",
-    level: "Intermediate",
-    category: "Web Development",
-    instructor: "Emma Wilson",
-    updated: "May 2024",
-    students: 1500,
-    lessons: 16,
+    title: "Online SP3D-Electrical & Instrumentation Training ",
+    slug: "online-sp2d-electrical-instrumentation-training ",
+    description: "",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeuFetDiXjPfdm7lEzHdcovTyZbfze61mfZA&s",
+    duration: "30 Days",
+    mode: ": Online Training on Google Meet or ZOOM",
+    students: 0,
+    lessons: 69,
+    available: "Fresh Batch Available",
     learningPoints: [
-      "Static Site Generation (SSG)",
-      "Server-Side Rendering (SSR)",
-      "API routes",
-      "Image optimization",
-      "Dynamic routing",
-      "Deployment with Vercel"
+      "It will upscale your skills, you will be industry ready and able to join as Instrumentation Design Engineer in any EPC companies worldwide.",
+      "Course Completion Certificate will be provided",
+      "Placement Assistance and doubt discussion will be provided after training. ",
+      "Training Materials will be provided. ",
+      "Interview Assistance will be provided "
     ],
     modules: [
       {
-        title: "Next.js Fundamentals",
-        lessons: 4,
-        description: "Core concepts and project setup"
+        title: "STARTING WITH SP3D",
+        lessons: "3",
+        description: "Basic setup, navigation, and workspace configuration in SmartPlant 3D.",
+        covered: [
+          "Modifying Database and server location",
+          "Opening S3D",
+          "Units defining"
+        ]
       },
       {
-        title: "Rendering Strategies",
-        lessons: 5,
-        description: "SSG, SSR, and client-side rendering"
+        title: "COMMON S3D",
+        lessons: "20",
+        description: "Understanding basic tools, commands, and view controls in SP3D.",
+        covered: [
+          "Describe basic setting",
+          "Defining work space",
+          "Creating filter",
+          "Types of Filters and applications",
+          "Undo, Copy, Paste, Paste and Restore",
+          "Locate Filter, Delete, Move, Rotate Object, Mirror Copy",
+          "Update Names, Properties",
+          "Clip by Object, Clip by Volume or Plane, Clear Clipping",
+          "Active View Control, Previous View, Next View, Named Views",
+          "Common Views, View by Points, Rotate View, Look at Surface",
+          "Zoom Tool, Navigate View, Zoom Area, Fit, Pan",
+          "Workspace Explorer, Rulers, To Do List Note, Control Point",
+          "Format View, Format Style, Surface Style Rules",
+          "Show, Hide, Show All",
+          "Pinpoint, Smart Sketch Options, Add to Smart Sketch List, Get Point, Point Along, Measure",
+          "Checking Interferences, Run Report, Drawing Console, Snapshot View",
+          "Custom Commands Utility, Options, Weight & CG Command",
+          "Claim, Release Claim, Assign to WBS, Update WBS Assignments",
+          "Cascade, Tile Horizontally, Tile Vertically, Help",
+          "Printable Guides, Custom Documentation"
+        ]
       },
       {
-        title: "Advanced Features",
-        lessons: 4,
-        description: "API routes, middleware, and more"
+        title: "ELECTRICAL AND INSTRUMENTATION MODULE",
+        lessons: "24",
+        description: "Learn cableway, conduit, and equipment operations within SP3D.",
+        covered: [
+          "Create new cableway, Route side-by-side cableways",
+          "Place components while routing cableway",
+          "Route cableway with an offset",
+          "Branch cableway from a turn feature, move a cableway branch, Move a transition",
+          "Flip a routed cableway tee, define cable tray barriers",
+          "Create new conduit, Add conduits to a duct bank, delete conduit from duct bank",
+          "Connect conduit end features, Place components while routing conduit",
+          "Copy a conduit run, extend an existing conduit run, Move a conduit run",
+          "Move a conduit branch, Route duct bank, Route a sloped duct bank",
+          "Copy a duct bank, Branch duct banks, move duct bank",
+          "Delete conduit from duct bank, Change duct bank turn angle",
+          "Extend or shorten duct bank, Delete a duct bank",
+          "Create a transition, create a transition while routing",
+          "Set alignment options, Insert a cable tray component",
+          "Insert a conduit component, Insert a component while routing",
+          "Rotate a conduit component, Route cableways automatically",
+          "Merge two duct bank segments, Place equipment from the catalogue",
+          "Set positioning relationships for equipment, Edit equipment properties",
+          "Edit equipment relationships, Insert multiple cable tray splits",
+          "Insert a single cable tray split, Insert a single cableway split",
+          "Join two existing cableways, Join two existing conduits",
+          "Join two existing cableways at a branch point",
+          "Join two existing conduits at a branch point",
+          "Create a cable, Copy a cable run"
+        ]
       },
       {
-        title: "Optimization & Deployment",
-        lessons: 3,
-        description: "Performance tuning and going live"
+        title: "SPACE MANAGEMENT MODULE",
+        lessons: "8",
+        description: "Create, modify, and assign space objects and volumes in SP3D.",
+        covered: [
+          "What's New in Space Management?",
+          "Space Management",
+          "Space Management Workflow",
+          "Create Space Folder, Create Space Objects",
+          "Associate Volume to Object, Place Drawing Volumes",
+          "Modify Space Objects",
+          "Assign Design Parent to Compartments and Volumes",
+          "Space Object Properties"
+        ]
+      },
+      {
+        title: "LAYOUT MODULE",
+        lessons: "14",
+        description: "Learn to create drawings, views, and outputs in SP3D Layout module.",
+        covered: [
+          "Composed Drawings Common Tasks",
+          "Volume Drawings Common Tasks",
+          "Orthographic Drawings by Query Common Tasks",
+          "Reports Common Tasks",
+          "Edit Template (Report Shortcut Menu)",
+          "Drawing the Design",
+          "Creating a Drawing, a Sheet and a View",
+          "Adding Elements to 3D View",
+          "View Frame positioning, View Size, View Centre, View Scale",
+          "Orientation of View Contents, Setting the VIEW",
+          "Creating Section Planes, Plotting and Drawing Output",
+          "Creating Configurable DXF and DWG Output",
+          "Linear Dimensions, Multi-valued Dimensions",
+          "Radial Dimensions, Angular Dimensions",
+          "Place text"
+        ]
       }
-    ],
-    content: `Next.js has become the go-to framework for production-ready React applications. This intensive course teaches you how to leverage its powerful features to build fast, scalable web applications.
-
-We start with Next.js fundamentals - you'll learn how it extends React with features like file-based routing, built-in CSS support, and image optimization. You'll understand the Next.js compilation and rendering pipeline and how it differs from traditional React apps.
-
-The rendering strategies module covers Next.js's most powerful features. You'll master static site generation (SSG) for blazing fast performance, server-side rendering (SSR) for dynamic content, and when to use each approach. We'll cover incremental static regeneration (ISR) for the best of both worlds.
-
-Advanced features include API routes for building backend functionality directly in your Next.js app, middleware for request processing, and dynamic routing for complex applications. You'll learn authentication patterns and how to integrate with external APIs.
-
-Performance is where Next.js truly shines. You'll implement image optimization, script optimization, and bundle analysis. We'll cover caching strategies and how to measure and improve your application's Core Web Vitals.
-
-Finally, you'll deploy your Next.js application to Vercel (the creators of Next.js) and learn about other hosting options. You'll understand how to configure environment variables, set up preview deployments, and monitor your production application.
-
-By the end of this course, you'll be able to build and deploy production-grade Next.js applications with confidence. You'll understand the framework's architecture well enough to make informed decisions about rendering strategies and performance optimization.`
+    ],    
+    content: ""
   }
-  // Remaining courses would follow the same pattern...
-]
+];
 
-export default CourseData
+export default CourseData;

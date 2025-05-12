@@ -15,7 +15,6 @@ import {
 import {
   FaFacebookF,
   FaInstagram,
-  FaTwitter,
   FaLinkedinIn,
   FaYoutube,
   FaWhatsapp,
@@ -43,11 +42,10 @@ export default function Navbar() {
 
   const socialLinks = [
     { icon: <FaWhatsapp />, href: 'https://wa.me/yourNumber', label: 'WhatsApp', color: 'bg-green-500' },
-    { icon: <FaInstagram />, href: 'https://instagram.com/yourProfile', label: 'Instagram', color: 'bg-pink-600' },
-    { icon: <FaYoutube />, href: 'https://youtube.com/yourChannel', label: 'YouTube', color: 'bg-red-600' },
-    { icon: <FaTwitter />, href: 'https://twitter.com/yourHandle', label: 'Twitter', color: 'bg-blue-400' },
-    { icon: <FaLinkedinIn />, href: 'https://linkedin.com/in/yourProfile', label: 'LinkedIn', color: 'bg-blue-700' },
-    { icon: <FaFacebookF />, href: 'https://facebook.com/yourPage', label: 'Facebook', color: 'bg-blue-600' },
+    { icon: <FaInstagram />, href: 'https://www.instagram.com/shanayatraininginstitute?igsh=MW84MHV6ZnRrb2F2Nw==', label: 'Instagram', color: 'bg-pink-600' },
+    { icon: <FaYoutube />, href: 'https://www.youtube.com/@shanayatraining', label: 'YouTube', color: 'bg-red-600' },
+    { icon: <FaLinkedinIn />, href: 'https://www.linkedin.com/company/shanaya-training-institute-pvt-ltd/', label: 'LinkedIn', color: 'bg-blue-700' },
+    { icon: <FaFacebookF />, href: 'https://www.facebook.com/share/18nRTrPhuX/', label: 'Facebook', color: 'bg-blue-600' },
   ]
 
   const navbarVariants = {
@@ -105,7 +103,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/" className="flex items-center cursor-pointer">
           <span className="text-2xl font-bold bg-gradient-to-r from-gray-600 to-gray-900 bg-clip-text text-transparent">
-            Shanaya
+            STI  Pvt Ltd
           </span>
         </Link>
 
@@ -129,7 +127,7 @@ export default function Navbar() {
             <span>eklakalam420@gmail.com</span>
           </a>
           <a href="tel:+1234567890" className="text-gray-800 hover:text-purple-600 flex items-center space-x-2">
-            <span>+91 XXXXXXXXXXX</span>
+            <span>+91 9990111835</span>
           </a>
         </div>
 

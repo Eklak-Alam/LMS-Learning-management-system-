@@ -9,7 +9,7 @@ const ServicesPage = () => {
       title: "Comprehensive Courses",
       description: "Structured curriculum covering all major subjects with expert-created content and regular updates.",
       features: [
-        "100+ courses available",
+        "20+ courses available",
         "Beginner to advanced levels",
         "Downloadable resources"
       ]
@@ -196,16 +196,17 @@ const ServicesPage = () => {
             <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
               Join thousands of students who have achieved academic excellence with our programs
             </p>
-            <motion.button
+            <motion.a
               whileHover={{ 
                 scale: 1.05,
                 boxShadow: "0 10px 20px -5px rgba(79, 70, 229, 0.3)"
               }}
               whileTap={{ scale: 0.98 }}
+              href='/courses'
               className="px-8 py-3.5 bg-gradient-to-r from-indigo-600 to-blue-600 rounded-lg font-medium text-white shadow-md hover:shadow-lg transition-all"
             >
-              Enroll Now
-            </motion.button>
+              Get Started
+            </motion.a>
           </motion.div>
         </div>
       </section>

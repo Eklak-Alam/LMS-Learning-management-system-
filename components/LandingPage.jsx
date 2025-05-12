@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { FiPlay, FiArrowRight } from 'react-icons/fi';
+import Link from 'next/link';
 
 export default function LandingPage() {
   const [hoveredCard, setHoveredCard] = useState(null);
@@ -38,7 +39,7 @@ export default function LandingPage() {
 
   const stats = [
     { value: "10K+", label: "Students Enrolled" },
-    { value: "200+", label: "Courses Available" },
+    { value: "20+", label: "Courses Available" },
     { value: "98%", label: "Satisfaction Rate" },
     { value: "24/7", label: "Support Available" }
   ];
@@ -52,14 +53,14 @@ export default function LandingPage() {
             <div className="w-full lg:w-1/2">
               <div className="mb-8 flex justify-center">
                 <span className="inline-block px-4 text-lg py-1.5 bg-purple-100 text-purple-700 rounded-full font-semibold tracking-wider shadow-sm">
-                  WELCOME TO SHANAYA
+                  WELCOME TO SHANAYA Pvt Ltd
                 </span>
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
                 Transform Your <span className="text-purple-600">Learning</span> Experience
               </h1>
               <p className="text-lg text-gray-600 mb-8 max-w-lg leading-relaxed">
-                Shanaya LMS provides cutting-edge learning solutions with personalized pathways, interactive content, and measurable outcomes.
+              Shanaya Training Institute Pvt Ltd  provides cutting-edge learning solutions with personalized pathways, interactive content, and measurable outcomes.
               </p>
             </div>
             <div className="w-full lg:w-1/2">
@@ -86,7 +87,7 @@ export default function LandingPage() {
           >
             <motion.div variants={fadeInUp} className="mb-8 flex justify-center">
               <span className="inline-block px-4 text-lg py-1.5 bg-purple-100 text-purple-700 rounded-full font-semibold tracking-wider shadow-sm">
-                WELCOME TO SHANAYA
+                WELCOME TO SHANAYA Pvt Ltd
               </span>
             </motion.div>
 
@@ -101,21 +102,21 @@ export default function LandingPage() {
               className="text-lg text-gray-600 mb-8 max-w-lg leading-relaxed"
               variants={fadeInUp}
             >
-              Shanaya LMS provides cutting-edge learning solutions with personalized pathways, interactive content, and measurable outcomes.
+              Shanaya Training Institute Pvt Ltd provides cutting-edge learning solutions with personalized pathways, interactive content, and measurable outcomes.
             </motion.p>
 
             <motion.div 
               className="flex flex-col sm:flex-row gap-4 mb-12"
               variants={fadeInUp}
             >
-              <button className="px-8 py-4 bg-purple-600 hover:bg-purple-700 text-white rounded-xl font-semibold flex items-center justify-center transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl">
+              <Link href="/courses" className="px-8 py-4 bg-purple-600 hover:bg-purple-700 text-white rounded-xl font-semibold flex items-center justify-center transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl">
                 <span>Start Learning</span>
                 <FiArrowRight className="ml-2" />
-              </button>
-              <button className="px-8 py-4 border border-purple-300 bg-white text-purple-700 rounded-xl font-semibold flex items-center justify-center transition-all duration-300 hover:bg-purple-50">
+              </Link>
+              <Link href="https://www.youtube.com/@shanayatraining" className="px-8 py-4 border border-purple-300 bg-white text-purple-700 rounded-xl font-semibold flex items-center justify-center transition-all duration-300 hover:bg-purple-50">
                 <FiPlay className="mr-2" />
                 <span>Watch Demo</span>
-              </button>
+              </Link>
             </motion.div>
 
             <motion.div 
