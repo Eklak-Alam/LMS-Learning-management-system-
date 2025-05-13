@@ -79,6 +79,12 @@ const CourseDetail = ({ params }) => {
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-gray-900">
                 {course.title}
               </h1>
+
+              {course.description && (
+                <div className="mb-6 p-4 bg-indigo-50 rounded-lg border border-indigo-100">
+                  <p className="text-gray-700">{course.description}</p>
+                </div>
+              )}
               
               <div className="flex flex-wrap gap-4 mb-8">
                 <div className="flex items-center text-gray-600 bg-gray-100 px-3 py-1 rounded-full">
