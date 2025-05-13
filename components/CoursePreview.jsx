@@ -103,7 +103,7 @@ const CoursePreview = () => {
                 {courses.slice(0, visibleCourses).map(course => (
                   <motion.div key={course.id} variants={item} layout>
                     <motion.div
-                      className="h-full bg-gray-100 rounded-xl overflow-hidden border border-gray-200 group shadow hover:shadow-md transition"
+                      className="h-full bg-white rounded-xl overflow-hidden border border-gray-200 group shadow hover:shadow-xl transition"
                       whileHover="hover"
                       initial="rest"
                       animate="rest"
@@ -165,7 +165,7 @@ const CoursePreview = () => {
                   </motion.button>
                 </Link>
 
-                <Link href="/contact">
+                <Link href="mailto:sawrabh20009@gmail.com">
                   <motion.button
                     whileHover={{ scale: 1.04 }}
                     whileTap={{ scale: 0.98 }}

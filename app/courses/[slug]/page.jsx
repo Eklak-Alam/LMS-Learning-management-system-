@@ -120,7 +120,6 @@ const CourseDetail = ({ params }) => {
                     <img
                       src={course.image}
                       alt={course.title}
-                      fill
                       className="object-cover"
                     />
                   </div>
@@ -141,11 +140,11 @@ const CourseDetail = ({ params }) => {
                     ))}
                   </div>
                   <div className="mt-6 space-y-3">
-                    <a href='https://wa.me/9990111835' className="flex items-center justify-center gap-2 w-full py-3 bg-green-600 hover:bg-green-700 rounded-md text-white transition-colors shadow-md">
+                    <a href='https://wa.me/919990111835' target='_blank' rel="noopener noreferrer" className="flex items-center justify-center gap-2 w-full py-3 bg-green-600 hover:bg-green-700 rounded-md text-white transition-colors shadow-md">
                       <Phone size={18} />
                       Contact via WhatsApp
                     </a>
-                    <a href='' className="flex items-center justify-center gap-2 w-full py-3 bg-indigo-600 hover:bg-indigo-700 rounded-md text-white transition-colors shadow-md">
+                    <a href='mailto:sawrabh20009@gmail.com' className="flex items-center justify-center gap-2 w-full py-3 bg-indigo-600 hover:bg-indigo-700 rounded-md text-white transition-colors shadow-md">
                       <Mail size={18} />
                       Email for Details
                     </a>
@@ -236,14 +235,14 @@ const CourseDetail = ({ params }) => {
                 <p className="text-lg text-indigo-700 mb-6">Get started with this professional training today</p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <a 
-                    href={`https://wa.me/${course.meta?.contact?.whatsapp?.replace(/\D/g, '')}`} 
+                    href='https://wa.me/919990111835' 
                     className="flex-1 flex items-center justify-center gap-2 py-3 bg-green-600 hover:bg-green-700 rounded-md text-white transition-colors shadow-md"
                   >
                     <Phone size={18} />
                     WhatsApp: {course.meta?.contact?.whatsapp}
                   </a>
                   <a 
-                    href={`mailto:${course.meta?.contact?.email}`} 
+                    href={`mailto:sawrabh20009@gmail.com`} 
                     className="flex-1 flex items-center justify-center gap-2 py-3 bg-indigo-600 hover:bg-indigo-700 rounded-md text-white transition-colors shadow-md"
                   >
                     <Mail size={18} />

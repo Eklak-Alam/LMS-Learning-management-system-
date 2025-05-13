@@ -127,7 +127,7 @@ export default function Navbar() {
           <a href="mailto:sawrabh20009@gmail.com" className="text-gray-800 hover:text-purple-600 flex items-center space-x-2">
             <span>sawrabh20009@gmail.com</span>
           </a>
-          <a href="tel:+1234567890" className="text-gray-800 hover:text-purple-600 flex items-center space-x-2">
+          <a href="tel:+919990111835" className="text-gray-800 hover:text-purple-600 flex items-center space-x-2">
             <span>+91 9990111835</span>
           </a>
         </div>
@@ -212,8 +212,8 @@ export default function Navbar() {
 
               {/* Mobile Contact Info */}
               <div className="flex flex-col items-center mt-4 space-y-4">
-                <a href="mailto:yourEmail@gmail.com" className="text-gray-800 hover:text-purple-600">Email: yourEmail@gmail.com</a>
-                <a href="tel:+1234567890" className="text-gray-800 hover:text-purple-600">Phone: +1 (234) 567-890</a>
+                <a href="mailto:sawrabh20009@gmail.com" className="text-gray-800 hover:text-purple-600">Email: sawrabh20009@gmail.com</a>
+                <a href="tel:+919990111835" className="text-gray-800 hover:text-purple-600">Phone: +91 9990111835</a>
               </div>
             </div>
           </motion.div>
