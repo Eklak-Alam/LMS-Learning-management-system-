@@ -19,7 +19,18 @@ export const metadata = {
       "Join Shanaya Training Institute for expert-led training in PLC, Industrial Automation, Web Development, Digital Marketing, and more. Live sessions, hands-on practice, and career support.",
     url: "https://shanayatraining.com/",
     siteName: "Shanaya Training Institute",
+    images: [
+      {
+        url: "https://shanayatraining.com/seoimg.jpg", // ✅ Replace with your actual image URL
+        width: 1200,
+        height: 630,
+        alt: "Shanaya Training Institute Banner",
+      },
+    ],
     type: "website",
+    icons: {
+      icon: "/favicon.ico",
+    },
   },
 };
 
