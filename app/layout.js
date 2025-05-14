@@ -48,6 +48,19 @@ export default function RootLayout({ children }) {
         <link rel="canonical" href="https://shanayatraining.com/" />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Shanaya Training Institute" />
+
+        {/* Add JSON-LD script here */}
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Shanaya Training Institute",
+              "url": "https://shanayatraining.com",
+              "logo": "https://shanayatraining.com/logo.png"
+            }
+          `}
+        </script>
       </head>
       <body>
         <Navbar />
@@ -58,3 +71,5 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+
+
