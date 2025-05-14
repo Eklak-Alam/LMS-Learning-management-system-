@@ -3,24 +3,26 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import "./globals.css";
 
+
 // ✅ SEO Metadata
 export const metadata = {
-  title: "Shanaya Training Institute | Best IT & Skill Development Courses",
+  title: "Shanaya Training Institute Pvt Ltd | Expert Training in Industrial & IT Skills",
   description:
-    "Join Shanaya Training Institute for expert-led courses in web development, programming, digital marketing, and more. 100% practical training with certification.",
+    "Upskill with Shanaya Training Institute’s certified programs in Industrial Automation, PLC, Digital Marketing, and more. Practical live training, industry-relevant curriculum, and placement assistance.",
   keywords:
-    "Shanaya Training Institute, IT courses, web development, training institute, coding, skill development, digital marketing",
+    "Shanaya Training Institute, PLC training, Industrial Automation, Skill Development, Online Training, Digital Marketing, Engineering Courses, Career Growth",
   authors: [{ name: "Shanaya Training Institute", url: "https://shanayatraining.com/" }],
   creator: "Shanaya Training Institute",
   openGraph: {
-    title: "Shanaya Training Institute | Learn IT Skills & Grow Your Career",
+    title: "Shanaya Training Institute | Certified Industrial & IT Skill Courses",
     description:
-      "Build your career with top-quality IT training in web development, software, and marketing at Shanaya Training Institute.",
+      "Join Shanaya Training Institute for expert-led training in PLC, Industrial Automation, Web Development, Digital Marketing, and more. Live sessions, hands-on practice, and career support.",
     url: "https://shanayatraining.com/",
     siteName: "Shanaya Training Institute",
     type: "website",
   },
 };
+
 
 export default function RootLayout({ children }) {
   return (
