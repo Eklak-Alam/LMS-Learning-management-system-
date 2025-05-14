@@ -21,7 +21,7 @@ export const metadata = {
     siteName: "Shanaya Training Institute",
     images: [
       {
-        url: "https://shanayatraining.com/seoimg.jpg", // ✅ Replace with your actual image URL
+        url: "https://shanayatraining.com/seoimg.jpg",
         width: 1200,
         height: 630,
         alt: "Shanaya Training Institute Banner",
@@ -39,6 +39,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/favicon.ico" />
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="canonical" href="https://shanayatraining.com/" />
