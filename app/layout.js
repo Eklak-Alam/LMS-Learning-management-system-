@@ -10,7 +10,7 @@ export const metadata = {
   description:
     "Upskill with Shanaya Training Institute’s certified programs in Industrial Automation, PLC, Digital Marketing, and more. Practical live training, industry-relevant curriculum, and placement assistance.",
   keywords:
-    "Shanaya Training Institute, PLC training, Industrial Automation, Skill Development, Online Training, Digital Marketing, Engineering Courses, Career Growth",
+    "Shanaya, Shanaya Course, Shanaya Training, Shanaya Training Institute, PLC training, Industrial Automation, Skill Development, Online Training, Digital Marketing, Engineering Courses, Career Growth",
   authors: [{ name: "Shanaya Training Institute", url: "https://shanayatraining.com/" }],
   creator: "Shanaya Training Institute",
   openGraph: {
@@ -21,15 +21,16 @@ export const metadata = {
     siteName: "Shanaya Training Institute",
     images: [
       {
-        url: "https://shanayatraining.com/seoimg.jpg",
+        url: "https://shanayatraining.com/logo.png", // ✅ Use public image
         width: 1200,
         height: 630,
-        alt: "Shanaya Training Institute Banner",
+        alt: "Shanaya Logo",
       },
     ],
     type: "website",
     icons: {
       icon: "/favicon.ico",
+      apple: "/favicon.ico",
     },
   },
 };
