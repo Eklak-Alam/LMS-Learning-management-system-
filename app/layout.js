@@ -40,34 +40,34 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="shortcut icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" href="/favicon.ico" />
+        {/* Favicon Links */}
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/favicon-32x32.png" type="image/png" />
+        <link rel="icon" href="/favicon-16x16.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="manifest" href="/site.webmanifest" />
+        
+        {/* Theme Color */}
+        <meta name="theme-color" content="#ffffff" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="msapplication-TileImage" content="/favicon-32x32.png" />
+        
+        {/* Other meta tags */}
         <meta name="google-site-verification" content="LrkpdjhX9cSJh782MW0R4wZEkppXnwc_NEaz30avcsQ" />
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="canonical" href="https://shanayatraining.com/" />
         <meta name="robots" content="index, follow" />
-        <meta name="author" content="Shanaya Training Institute" />
-        <meta name="theme-color" content="#ffffff" />
-        <meta name="msapplication-TileColor" content="#ffffff" />
-        <meta name="msapplication-config" content="/favicon.ico" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-
-
-        {/* Add JSON-LD script here */}
+        
+        {/* JSON-LD */}
         <script type="application/ld+json">
-          {`
-            {
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              "name": "Shanaya Training Institute",
-              "url": "https://shanayatraining.com",
-              "logo": "https://shanayatraining.com/logo.png"
-            }
-          `}
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Shanaya Training Institute",
+            "url": "https://shanayatraining.com",
+            "logo": "https://shanayatraining.com/logo.png"
+          })}
         </script>
       </head>
       <body>
