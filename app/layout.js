@@ -8,7 +8,7 @@ import "./globals.css";
 export const metadata = {
   title: "Shanaya Training Institute Pvt Ltd | Expert Training in Industrial & IT Skills",
   description:
-    "Upskill with Shanaya Training Institute’s certified programs in Industrial Automation, PLC, Digital Marketing, and more. Practical live training, industry-relevant curriculum, and placement assistance.",
+    "Join Shanaya Training Institute for expert-led training in PLC, Industrial Automation, Web Development, Digital Marketing, and more. Live sessions, hands-on practice, and career support.",
   keywords:
     "Shanaya, Shanaya Course, Shanaya Training, Shanaya Training Institute, PLC training, Industrial Automation, Skill Development, Online Training, Digital Marketing, Engineering Courses, Career Growth",
   authors: [{ name: "Shanaya Training Institute", url: "https://shanayatraining.com/" }],
@@ -16,7 +16,7 @@ export const metadata = {
   openGraph: {
     title: "Shanaya Training Institute | Certified Industrial & IT Skill Courses",
     description:
-      "Join Shanaya Training Institute for expert-led training in PLC, Industrial Automation, Web Development, Digital Marketing, and more. Live sessions, hands-on practice, and career support.",
+      "Upskill with Shanaya Training Institute’s certified programs in Industrial Automation, PLC, Digital Marketing, and more. Practical live training, industry-relevant curriculum, and placement assistance.",
     url: "https://shanayatraining.com/",
     siteName: "Shanaya Training Institute",
     images: [
