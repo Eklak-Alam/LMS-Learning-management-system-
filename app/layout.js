@@ -21,7 +21,7 @@ export const metadata = {
     siteName: "Shanaya Training Institute",
     images: [
       {
-        url: "https://shanayatraining.com/logoimg.jpg",
+        url: "https://shanayatraining.com/logo.png",
         width: 1200,
         height: 630,
         alt: "Shanaya Logo",
