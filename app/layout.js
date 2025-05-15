@@ -44,6 +44,9 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="icon" href="/favicon-32x32.png" type="image/png" />
         <link rel="icon" href="/favicon-16x16.png" type="image/png" />
+        <link rel="icon" href="/apple-touch-icon.png" type="image/png" />
+        <link rel="icon" href="/android-chrome-512x512.png" type="image/png" />
+        <link rel="icon" href="/android-chrome-192x192.png" type="image/png" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/site.webmanifest" />
         
