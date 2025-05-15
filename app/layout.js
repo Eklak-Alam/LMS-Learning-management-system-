@@ -72,6 +72,25 @@ export default function RootLayout({ children }) {
             "logo": "https://shanayatraining.com/logo.png"
           })}
         </script>
+
+        <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "TrainingCenter",
+          "name": "Shanaya Training Institute",
+          "image": "https://shanayatraining.com/logo.png",
+          "telephone": "+91 9990111835",
+          "email": "sawrabh20009@gmail.com",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Shanti Nagar, Near Newaji Tola, Chapra Pin 841301",
+            "addressLocality": "Chapra",
+            "addressRegion": "Bihar",
+            "postalCode": "841301",
+            "addressCountry": "India"
+          }
+        })}
+      </script>
       </head>
       <body>
         <Navbar />
