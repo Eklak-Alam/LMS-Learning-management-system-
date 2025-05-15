@@ -49,6 +49,13 @@ export default function RootLayout({ children }) {
         <link rel="canonical" href="https://shanayatraining.com/" />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Shanaya Training Institute" />
+        <meta name="theme-color" content="#ffffff" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="msapplication-config" content="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
 
         {/* Add JSON-LD script here */}
         <script type="application/ld+json">
