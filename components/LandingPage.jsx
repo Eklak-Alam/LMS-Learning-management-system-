@@ -60,7 +60,7 @@ export default function LandingPage() {
                 Transform Your <span className="text-purple-600">Learning</span> Experience
               </h1>
               <p className="text-lg text-gray-600 mb-8 max-w-lg leading-relaxed">
-              Shanaya Training Institute Pvt Ltd  provides cutting-edge learning solutions with personalized pathways, interactive content, and measurable outcomes.
+              Shanaya Training Institute Pvt Ltd provides cutting-edge learning solutions with personalized pathways, interactive content, and measurable outcomes.
               </p>
             </div>
             <div className="w-full lg:w-1/2">
@@ -87,7 +87,7 @@ export default function LandingPage() {
           >
             <motion.div variants={fadeInUp} className="mb-8 flex justify-center">
               <span className="inline-block px-4 text-lg py-1.5 bg-purple-100 text-purple-700 rounded-full font-semibold tracking-wider shadow-sm">
-                WELCOME TO SHANAYA Pvt Ltd
+                WELCOME TO SHANAYA
               </span>
             </motion.div>
 
@@ -102,7 +102,7 @@ export default function LandingPage() {
               className="text-lg text-gray-600 mb-8 max-w-lg leading-relaxed"
               variants={fadeInUp}
             >
-              Shanaya Training Institute Pvt Ltd provides cutting-edge learning solutions with personalized pathways, interactive content, and measurable outcomes.
+              Shanaya Training Institute Pvt Ltd An ISO 9002:2015 India's Best Engineering ONLINE Training Institute with well experience faculty from top MNC, Flexible timing. Low price
             </motion.p>
 
             <motion.div 

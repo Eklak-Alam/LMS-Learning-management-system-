@@ -6,9 +6,9 @@ import "./globals.css";
 
 // ✅ SEO Metadata
 export const metadata = {
-  title: "Shanaya Training Institute Pvt Ltd | Expert Training in Industrial & IT Skills",
+  title: "Shanaya Training Institute Pvt Ltd | Best Online Engineering Design Skill Training Institute",
   description:
-    "Join Shanaya Training Institute for expert-led training in PLC, Industrial Automation, Web Development, Digital Marketing, and more. Live sessions, hands-on practice, and career support.",
+    "India's Best Engineering ONLINE Training Institute with well experience faculty from top MNC, Flexible timing. Low price | Join Shanaya Training Institute for expert-led training in PLC, Industrial Automation, Web Development, Digital Marketing, and more. Live sessions, hands-on practice, and career support.",
   keywords:
     "Shanaya, Shanaya Course, Shanaya Training, Shanaya Training Institute, PLC training, Industrial Automation, Skill Development, Online Training, Digital Marketing, Engineering Courses, Career Growth",
   authors: [{ name: "Shanaya Training Institute", url: "https://shanayatraining.com/" }],
@@ -21,7 +21,7 @@ export const metadata = {
     siteName: "Shanaya Training Institute",
     images: [
       {
-        url: "https://shanayatraining.com/logo.png", // ✅ Use public image
+        url: "https://shanayatraining.com/logo.png",
         width: 1200,
         height: 630,
         alt: "Shanaya Logo",
@@ -43,6 +43,7 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/favicon.ico" />
         <link rel="shortcut icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/favicon.ico" />
+        <meta name="google-site-verification" content="LrkpdjhX9cSJh782MW0R4wZEkppXnwc_NEaz30avcsQ" />
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="canonical" href="https://shanayatraining.com/" />
