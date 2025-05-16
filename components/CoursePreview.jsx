@@ -64,7 +64,7 @@ const CoursePreview = () => {
   };
 
   return (
-    <section className="py-12 px-4 sm:px-6 bg-white">
+    <section className="py-12 px-4 sm:px-6 bg-gradient-to-br from-blue-600 via-white to-red-200">
       <div className="max-w-7xl mx-auto">
         {/* Institute Header */}
         <div className="text-center mb-12">
@@ -105,7 +105,7 @@ const CoursePreview = () => {
             </motion.span>
 
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
-              Specialized <span className="text-purple-600">Technical Training</span> Programs
+              <span className="text-purple-600">Technical Training </span>Online Programs
             </h1>
 
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">

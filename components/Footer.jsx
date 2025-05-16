@@ -126,7 +126,7 @@ export default function PremiumFooter() {
   return (
     <footer 
       ref={footerRef}
-      className="bg-gray-800 text-white pt-16 pb-10 relative overflow-hidden"
+      className="bg-gradient-to-br from-gray-900 via-gray-600 to-purple-800 text-white pt-16 pb-10 relative overflow-hidden"
     >
       {/* Gradient background */}
       <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 to-gray-900/80 z-0" />

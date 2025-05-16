@@ -12,7 +12,7 @@ import {
   Menu,
   X,
   Check,
-  Mail, // Now properly imported
+  Mail,
 } from 'lucide-react'
 import {
   FaFacebookF,
@@ -35,19 +35,19 @@ export default function Navbar() {
   }, [])
 
   const navLinks = [
-    { name: 'Home', icon: <Home size={18} />, href: '/' },
-    { name: 'Courses', icon: <BookOpen size={18} />, href: '/courses' },
-    { name: 'Services', icon: <Headphones size={18} />, href: '/services' },
-    { name: 'About', icon: <Info size={18} />, href: '/about' },
-    { name: 'Contact', icon: <Phone size={18} />, href: '/contact' },
+    { name: 'Home', icon: <Home size={22} />, href: '/' },
+    { name: 'Courses', icon: <BookOpen size={22} />, href: '/courses' },
+    { name: 'Services', icon: <Headphones size={22} />, href: '/services' },
+    { name: 'About', icon: <Info size={22} />, href: '/about' },
+    { name: 'Contact', icon: <Phone size={22} />, href: '/contact' },
   ]
 
   const socialLinks = [
-    { icon: <FaWhatsapp size={16} />, href: 'https://wa.me/919990111835', label: 'WhatsApp', color: 'bg-green-500' },
-    { icon: <FaInstagram size={16} />, href: 'https://www.instagram.com/shanayatraininginstitute?igsh=MW84MHV6ZnRrb2F2Nw==', label: 'Instagram', color: 'bg-pink-600' },
-    { icon: <FaYoutube size={16} />, href: 'https://www.youtube.com/@shanayatraining', label: 'YouTube', color: 'bg-red-600' },
-    { icon: <FaLinkedinIn size={16} />, href: 'https://www.linkedin.com/company/shanaya-training-institute-pvt-ltd/', label: 'LinkedIn', color: 'bg-blue-700' },
-    { icon: <FaFacebookF size={16} />, href: 'https://www.facebook.com/share/18nRTrPhuX/', label: 'Facebook', color: 'bg-blue-600' },
+    { icon: <FaWhatsapp size={20} />, href: 'https://wa.me/919990111835', label: 'WhatsApp', color: 'bg-green-500' },
+    { icon: <FaInstagram size={20} />, href: 'https://www.instagram.com/shanayatraininginstitute?igsh=MW84MHV6ZnRrb2F2Nw==', label: 'Instagram', color: 'bg-gradient-to-br from-pink-500 to-orange-500' },
+    { icon: <FaYoutube size={20} />, href: 'https://www.youtube.com/@shanayatraining', label: 'YouTube', color: 'bg-red-600' },
+    { icon: <FaLinkedinIn size={20} />, href: 'https://www.linkedin.com/company/shanaya-training-institute-pvt-ltd/', label: 'LinkedIn', color: 'bg-blue-700' },
+    { icon: <FaFacebookF size={20} />, href: 'https://www.facebook.com/share/18nRTrPhuX/', label: 'Facebook', color: 'bg-blue-600' },
   ]
 
   const navbarVariants = {
@@ -78,16 +78,16 @@ export default function Navbar() {
 
   if (!isMounted) {
     return (
-      <nav className="fixed top-0 left-0 w-full z-50 px-4 md:px-6 py-3 bg-white/80 backdrop-blur-sm">
+      <nav className="fixed top-0 left-0 w-full z-50 px-4 md:px-6 py-4 bg-gradient-to-r from-blue-900 to-blue-700 text-white">
         <div className="max-w-7xl mx-auto flex items-center justify-between p-2">
           <Link href="/" className="flex items-center cursor-pointer">
             <div className="flex flex-col">
-              <span className="text-lg font-bold text-gray-800">Shanaya Training Institute</span>
-              <span className="text-xs text-gray-500">ISO 9001:2015 Certified</span>
+              <span className="text-xl font-bold">Shanaya Training Institute</span>
+              <span className="text-sm">ISO 9001:2015 Certified</span>
             </div>
           </Link>
-          <button className="lg:hidden text-gray-800">
-            <Menu size={24} />
+          <button className="lg:hidden">
+            <Menu size={28} />
           </button>
         </div>
       </nav>
@@ -99,15 +99,15 @@ export default function Navbar() {
       initial="hidden"
       animate="visible"
       variants={navbarVariants}
-      className={`fixed top-0 left-0 w-full z-50 px-4 md:px-6 py-3 transition-all duration-300 ${scrolled ? 'bg-white shadow-lg border-b border-gray-200' : 'bg-white/80 backdrop-blur-sm'}`}
+      className={`fixed top-0 left-0 w-full z-50 px-4 md:px-8 py-4 transition-all duration-300 ${scrolled ? 'bg-gradient-to-r from-blue-900 to-blue-700 shadow-xl' : 'bg-gradient-to-r from-blue-900 to-blue-700'}`}
     >
       <div className="max-w-8xl mx-auto flex items-center justify-between">
         {/* Logo with full name and ISO */}
         <Link href="/" className="flex items-center cursor-pointer min-w-0">
           <div className="flex flex-col ml-2">
             <motion.span 
-              className="text-lg font-bold text-gray-800 whitespace-nowrap overflow-hidden text-ellipsis"
-              whileHover={{ color: '#7c3aed' }}
+              className="text-lg md:text-xl font-bold text-white whitespace-nowrap overflow-hidden text-ellipsis"
+              whileHover={{ color: '#a5b4fc' }}
             >
               Shanaya Training Institute Pvt Ltd
             </motion.span>
@@ -117,38 +117,38 @@ export default function Navbar() {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.3 }}
             >
-              <Check className="h-3 w-3 text-green-600" />
-              <span className="text-xs text-gray-500">ISO 9001:2015 Certified</span>
+              <Check className="h-4 w-4 text-green-300" />
+              <span className="text-sm text-blue-100">ISO 9001:2015 Certified</span>
             </motion.div>
           </div>
         </Link>
 
         {/* Desktop Navigation */}
-        <div className="hidden lg:flex items-center space-x-8 mx-4">
+        <div className="hidden lg:flex items-center space-x-10 mx-6">
           {navLinks.map((link) => (
             <Link
               key={link.name}
               href={link.href}
-              className="flex items-center text-gray-700 hover:text-purple-600 transition-colors group"
+              className="flex items-center text-blue-100 hover:text-white transition-colors group"
             >
-              <span className="mr-2 group-hover:scale-110 transition-transform">{link.icon}</span>
-              <span className="font-medium">{link.name}</span>
+              <span className="mr-3 group-hover:scale-110 transition-transform">{link.icon}</span>
+              <span className="font-medium text-lg">{link.name}</span>
             </Link>
           ))}
         </div>
 
         {/* Contact and Social */}
-        <div className="hidden lg:flex items-center space-x-4">
+        <div className="hidden lg:flex items-center space-x-6">
           <div className="flex flex-col items-end mr-4">
-            <a href="tel:+919990111835" className="text-sm font-medium text-gray-700 hover:text-purple-600">
+            <a href="tel:+919990111835" className="text-lg font-medium text-white hover:text-blue-100">
               +91 9990111835
             </a>
-            <a href="mailto:sawrabh20009@gmail.com" className="text-xs text-gray-500 hover:text-purple-500">
+            <a href="mailto:sawrabh20009@gmail.com" className="text-sm text-blue-100 hover:text-white">
               sawrabh20009@gmail.com
             </a>
           </div>
           
-          <div className="flex items-center space-x-2">
+          <div className="flex items-center space-x-3">
             {socialLinks.map((social, idx) => (
               <motion.a
                 key={social.label}
@@ -156,8 +156,8 @@ export default function Navbar() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={social.label}
-                className={`${social.color} text-white p-2 rounded-full flex items-center justify-center`}
-                whileHover={{ scale: 1.1, rotate: 5 }}
+                className={`${social.color} text-white p-3 rounded-full flex items-center justify-center hover:shadow-lg`}
+                whileHover={{ scale: 1.15, rotate: 5 }}
                 whileTap={{ scale: 0.95 }}
                 initial={{ opacity: 0, y: -10 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -172,10 +172,10 @@ export default function Navbar() {
         {/* Mobile Menu Button */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="lg:hidden text-gray-800 hover:text-purple-600 focus:outline-none p-2"
+          className="lg:hidden text-white hover:text-blue-200 focus:outline-none p-2"
           aria-label={isOpen ? "Close menu" : "Open menu"}
         >
-          {isOpen ? <X size={24} /> : <Menu size={24} />}
+          {isOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
       </div>
 
@@ -187,9 +187,9 @@ export default function Navbar() {
             animate="open"
             exit="closed"
             variants={mobileMenuVariants}
-            className="lg:hidden w-full bg-white overflow-hidden shadow-inner"
+            className="lg:hidden w-full bg-blue-800 overflow-hidden shadow-inner"
           >
-            <div className="flex flex-col space-y-1 py-3 px-4">
+            <div className="flex flex-col space-y-2 py-4 px-6">
               {navLinks.map((link) => (
                 <motion.div
                   key={link.name}
@@ -197,35 +197,35 @@ export default function Navbar() {
                 >
                   <Link
                     href={link.href}
-                    className="flex items-center text-gray-800 hover:text-purple-600 transition-colors py-3 px-4 rounded-lg hover:bg-gray-50"
+                    className="flex items-center text-blue-100 hover:text-white transition-colors py-4 px-6 rounded-lg hover:bg-blue-700/50"
                     onClick={() => setIsOpen(false)}
                   >
-                    <span className="mr-3">{link.icon}</span>
-                    <span className="font-medium">{link.name}</span>
+                    <span className="mr-4">{link.icon}</span>
+                    <span className="font-medium text-lg">{link.name}</span>
                   </Link>
                 </motion.div>
               ))}
               
               {/* Mobile Contact Info */}
               <motion.div 
-                className="mt-4 pt-4 border-t border-gray-200"
+                className="mt-4 pt-4 border-t border-blue-700"
                 variants={mobileItemVariants}
               >
-                <div className="flex flex-col space-y-3 px-4">
-                  <div className="flex items-center space-x-2">
-                    <Phone className="h-4 w-4 text-purple-600" />
-                    <a href="tel:+919990111835" className="text-gray-700">+91 9990111835</a>
+                <div className="flex flex-col space-y-4 px-6">
+                  <div className="flex items-center space-x-3">
+                    <Phone className="h-5 w-5 text-blue-200" />
+                    <a href="tel:+919990111835" className="text-lg text-white">+91 9990111835</a>
                   </div>
-                  <div className="flex items-center space-x-2">
-                    <Mail className="h-4 w-4 text-purple-600" />
-                    <a href="mailto:sawrabh20009@gmail.com" className="text-gray-700">sawrabh20009@gmail.com</a>
+                  <div className="flex items-center space-x-3">
+                    <Mail className="h-5 w-5 text-blue-200" />
+                    <a href="mailto:sawrabh20009@gmail.com" className="text-lg text-white">sawrabh20009@gmail.com</a>
                   </div>
                 </div>
               </motion.div>
 
               {/* Mobile Social Links */}
               <motion.div 
-                className="flex justify-center space-x-4 mt-4 pt-4 border-t border-gray-200"
+                className="flex justify-center space-x-4 mt-6 pt-6 border-t border-blue-700"
                 variants={mobileItemVariants}
               >
                 {socialLinks.map((social, idx) => (
@@ -235,8 +235,8 @@ export default function Navbar() {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={social.label}
-                    className={`${social.color} text-white p-2 rounded-full`}
-                    whileHover={{ scale: 1.1 }}
+                    className={`${social.color} text-white p-3 rounded-full`}
+                    whileHover={{ scale: 1.15 }}
                     whileTap={{ scale: 0.95 }}
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -249,10 +249,10 @@ export default function Navbar() {
 
               {/* ISO Certification */}
               <motion.div 
-                className="flex items-center justify-center mt-4 pt-4 border-t border-gray-200 text-xs text-gray-500"
+                className="flex items-center justify-center mt-6 pt-6 border-t border-blue-700 text-sm text-blue-100"
                 variants={mobileItemVariants}
               >
-                <Check className="h-3 w-3 text-green-600 mr-1" />
+                <Check className="h-4 w-4 text-green-300 mr-2" />
                 ISO 9001:2015 Certified
               </motion.div>
             </div>

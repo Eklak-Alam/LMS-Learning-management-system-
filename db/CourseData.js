@@ -1,203 +1,6 @@
 const CourseData = [
   {
     id: 1,
-    title: "INDUSTRIAL CONTROL SYSTEM / PROGRAMMABLE LOGIC CONTROLLER (PLC)",
-    slug: "programmable-logic-controller",
-    description: "Master the fundamentals and advanced concepts of Industrial Control Systems with our comprehensive PLC (Programmable Logic Controller) training. This course is designed for engineers, technicians, and students looking to build a career in industrial automation. Learn PLC architecture, programming (ladder logic, function block diagram), troubleshooting, and real-time industrial applications—all through live interactive sessions. Gain hands-on knowledge and elevate your skills to meet industry demands.",
-    image: "https://5.imimg.com/data5/SELLER/Default/2022/12/LP/QN/ML/4747417/programmable-logic-controller-repair-services.jpg",
-    duration: "20 Days ",
-    mode: "Online Live Interactive Training on ZOOM / Google meet.",
-    students: 1250,
-    lessons: 46,
-    available: "Fresh Batch Available.",
-    learningPoints: [
-      "It will upscale your skills, you will be industry ready and able to join as Instrumentation Design Engineer in any EPC companies worldwide.",
-      "Course Completion Certificate will be provided.",
-      "Placement Assistance and doubt discussion will be provided after training.",
-      "Training Materials will be provided. PLC Interview Questions & Answers",
-      "Free Study Material: PLC Programming Examples",
-      "Practical PLC example ladder logics to test your technical skills on the PLC.",
-      "Interview Assistance will be provided"
-    ],
-    modules: [
-      {
-        title: "Introduction to Industrial Control Systems",
-        lessons: 7,
-        description: "Understand the fundamental concepts of Programmable Logic Controllers and associated systems.",
-        covered: [
-          "Introduction to Industrial Control System",
-          "Programmable Logic Controller (PLC)",
-          "Overview of SCADA, DCS & RTU",
-          "Difference between DCS, PLC, and RTU?",
-          "DCS Architecture Vs PLC Architecture",
-          "What is a Human-Machine Interface (HMI)?",
-          "Essential Documents in a PLC System"
-        ]
-      },
-      {
-        title: "PLC Input/Output Cards",
-        lessons: 7,
-        description: "Explore the hardware components of PLC systems and their functionality.",
-        covered: [
-          "PLC Input/Output Modules",
-          "PLC Digital Input and Output Modules",
-          "PLC Analog I/O and Network I/O",
-          "PLC Analog Input Card Resolution Effects on Accuracy",
-          "PLC Analog Input Conversion Formula",
-          "PLC Output Types",
-          "PLC Analog I/O Potential Problems"
-        ]
-      },
-      {
-        title: "PLC Logic & Functions",
-        lessons: 8,
-        description: "Develop an understanding of PLC logic and ladder diagrams for beginners.",
-        covered: [
-          "What is a Ladder Diagram?",
-          "Introduction to PLC Ladder Diagrams",
-          "PLC Logic Functions",
-          "PLC Latching Function",
-          "PLC Multiple Outputs Configuration",
-          "Contacts and Coils",
-          "Logic Gates",
-          "PLC Program Examples"
-        ]
-      },
-      {
-        title: "PLC Hardware Design Rules",
-        lessons: 9,
-        description: "Understand standard practices for PLC wiring circuits.",
-        covered: [
-          "Basics of Switches – NO/NC Contact",
-          "What is Sinking & Sourcing?",
-          "Relay Circuits",
-          "Why Normally Closed Contact for Stop Buttons?",
-          "Basics of Fail-safe Circuits & Failsafe Wiring Practices",
-          "PLC Sinking & Sourcing Concept",
-          "PLC Signals Wiring Techniques",
-          "Basics of Permissive and Interlock Circuits",
-          "What is Interposing Relay in a PLC System?"
-        ]
-      },
-      {
-        title: "PLC Programming",
-        lessons: 8,
-        description: "Learn the fundamentals of programming PLCs using ladder diagrams.",
-        covered: [
-          "Basics of Ladder Diagram in PLC Programming",
-          "PLC Programming Languages",
-          "Basics of PLC Programming",
-          "Normally Closed Logic",
-          "PLC Timer Instructions",
-          "PLC Math Instructions",
-          "PLC Memory Mapping & I/O Addressing",
-          "PLC Ladder Logic Example"
-        ]
-      },
-      {
-        title: "PLC Application in Industrial Automation",
-        lessons: 6,
-        description: "Apply PLCs in practical industrial automation scenarios.",
-        covered: [
-          "How a PLC Reads the Data from Field Transmitters",
-          "How PLC Controls an ON/OFF Valve?",
-          "How PLC Controls a Motor?",
-          "How to Troubleshoot a PLC System",
-          "How does a PLC do the Scaling for a Sensor?"
-        ]
-      },
-      {
-        title: "Introduction to IIOT and OT Cybersecurity",
-        lessons: 1,
-        description: "Understand the basics of the Industrial Internet of Things and cybersecurity practices in operational technology."
-      }
-    ],
-    content: `The demand for skilled PLC professionals continues to grow across industries. This course not only provides you with the technical skills to operate and program PLCs but also sets you on a path to becoming a proficient automation expert. Whether you aim to optimize production lines, manage energy systems, or improve manufacturing processes, the knowledge gained here will be invaluable.` // You can keep or customize this.
-  },
-  {
-    id: 2,
-    title: "Online Live AVEVA E3D Instrumentation Training",
-    slug: "online-live-aveva-e3d-instrumentation-training",
-    description: "Join our expert-led Online Live AVEVA E3D Instrumentation Training and gain in-depth knowledge of AVEVA's powerful 3D design environment. This course is ideal for engineers, designers, and professionals working in the oil & gas, petrochemical, and industrial sectors. Learn to model, configure, and manage instrumentation layouts with precision using E3D tools. Delivered through live sessions on Zoom/Google Meet, this training combines theoretical concepts with real-world project practices to help you become job-ready.",
-    image: "https://www.aveva.com/en/training/cloud-training-center/_jcr_content/root/main_container/main-container/responsivegrid/background_container/backgroundCon/column_control/2colpar1/image/.coreimg.png/1731006559829/aveva-e3d-design-model-600x450.png",
-    duration: "30 Days",
-    mode: "Online Live Interactive Training on ZOOM / Google meet.",
-    students: 1200,
-    lessons: 18,
-    available: "Fresh Batch Available. ",
-    learningPoints: [
-      "It will upscale your skills, you will be industry ready and able to join as Instrumentation Design Engineer in any EPC companies worldwide",
-      "Course Completion Certificate will be provided.",
-      "Placement Assistance and doubt discussion will be provided after training. ",
-      "Training Materials will be provided.",
-      "Interview Assistance will be provided ",
-    ],
-    modules: [
-      {
-        title: "Instrumentation Hierarchy & Setup",
-        lessons: 3,
-        description: "Learn how to create a structured instrumentation hierarchy and manage instrument specifications and storage areas.",
-        covered: [
-          "Creating an instrumentation hierarchy",
-          "Setting up and managing default instrument specifications",
-          "Defining storage areas for instruments and data management"
-        ]
-      },
-      {
-        title: "Instrumentation Equipment Modelling",
-        lessons: 3,
-        description: "Understand how to place and configure instruments in the 3D model, including tag management and process connections.",
-        covered: [
-          "Placing and modifying instruments in the 3D model",
-          "Understanding instrument tags and attributes",
-          "Configuring process connections and fittings"
-        ]
-      },
-      {
-        title: "Cable & Tubing Routing",
-        lessons: 3,
-        description: "Master routing techniques for instrument cables and tubes, and manage connections effectively.",
-        covered: [
-          "Creating and modifying instrument cable trays and routes",
-          "Setting up tubing routes for instruments",
-          "Managing cable and tubing connections"
-        ]
-      },
-      {
-        title: "Junction Box & Marshalling Panel Configuration",
-        lessons: 3,
-        description: "Learn how to design junction boxes and marshalling panels to ensure efficient signal routing and management.",
-        covered: [
-          "Creating and positioning junction boxes",
-          "Configuring marshalling panels for efficient signal management",
-          "Managing terminal strips and connection points"
-        ]
-      },
-      {
-        title: "Instrumentation Loop Diagram Integration",
-        lessons: 3,
-        description: "Generate and verify instrumentation loop diagrams while ensuring compliance with standards.",
-        covered: [
-          "Generating and managing loop diagrams",
-          "Ensuring compliance with instrumentation standards",
-          "Verifying loop connectivity in AVEVA E3D"
-        ]
-      },
-      {
-        title: "Instrumentation Data & Reports",
-        lessons: 3,
-        description: "Extract and organize data for detailed reports including BOMs, layout, and connections.",
-        covered: [
-          "Extracting instrument data for reports",
-          "Managing bill of materials (BOM) for instrumentation systems",
-          "Generating layout and connection reports"
-        ]
-      }
-    ],
-    content: "The AVEVA E3D Instrumentation Training course provides a comprehensive understanding of designing and managing instrumentation systems using AVEVA Everything3D (E3D). Participants will gain hands-on experience in creating, modifying, and optimizing instrumentation layouts within an intelligent 3D environment. AVEVA E3D Design offers specialized training for electrical and instrumentation engineers, focusing on modelling complex equipment and associated supports. The training content typically includes: Overview of the software's interface, navigation, and basic modelling techniques. Detailed instruction on creating and editing electrical panels, fixtures, and routing cable trays and cableways. Training on integrating electrical and instrumentation designs with AVEVA Instrumentation, including cable creation and management. Guidance on generating and customizing reports from the 3D model, including drawing production and documentation."
-  },
-  {
-    id: 3,
     title: "Online Live Instrumentation Design & Details Engineering Training",
     slug: "online-live-instrumentation-design-details-engineering-training",
     description: "This Online Live Instrumentation Design & Detail Engineering Training is tailored for aspiring instrumentation engineers and professionals seeking in-depth knowledge in industrial instrumentation systems. The course covers essential topics like P&ID, instrumentation datasheets, loop diagrams, cable schedules, hook-up drawings, and control panel design. Delivered through live interactive sessions, it focuses on both design theory and practical application, helping participants gain the skills required for real-world engineering projects in industries like oil & gas, power, and manufacturing.",
@@ -352,7 +155,7 @@ const CourseData = [
     content: ""
   },
   {
-    id: 4,
+    id: 2,
     title: "Online Live Smart Plant Instrumentation (SPI)-Intools Training",
     slug: "online-live-smart-plant-instrumentation-spi-intools-training",
     description: "Enhance your expertise in industrial instrumentation with our Online Live Smart Plant Instrumentation (SPI) – Intools Training. Designed for instrumentation engineers and professionals, this course provides comprehensive training on SPI software, covering instrument index creation, loop diagrams, specification sheets, wiring details, and database management. Through live interactive sessions, you’ll gain practical experience in handling real project scenarios and mastering one of the most widely used tools in the EPC industry.",
@@ -398,7 +201,7 @@ const CourseData = [
               X. Hook-Up Drawings and BOM Calculation `
   },
   {
-    id: 5,
+    id: 3,
     title: "Online SP3D-Electrical & Instrumentation Training ",
     slug: "online-electrical-instrumentation-training",
     description: "Gain hands-on expertise in electrical and instrumentation design with our Online SP3D Electrical & Instrumentation Training. This course is ideal for engineers and professionals working in the oil & gas, petrochemical, and power sectors. Learn how to model electrical systems, cable trays, instruments, and junction boxes using Intergraph SmartPlant 3D (SP3D). Delivered through live interactive sessions, the training blends theory with real-world project workflows to make you job-ready in the EPC industry.",
@@ -523,7 +326,204 @@ const CourseData = [
       }
     ],    
     content: ""
-  }
+  },
+  {
+    id: 4,
+    title: "INDUSTRIAL CONTROL SYSTEM / PROGRAMMABLE LOGIC CONTROLLER (PLC)",
+    slug: "programmable-logic-controller",
+    description: "Master the fundamentals and advanced concepts of Industrial Control Systems with our comprehensive PLC (Programmable Logic Controller) training. This course is designed for engineers, technicians, and students looking to build a career in industrial automation. Learn PLC architecture, programming (ladder logic, function block diagram), troubleshooting, and real-time industrial applications—all through live interactive sessions. Gain hands-on knowledge and elevate your skills to meet industry demands.",
+    image: "https://5.imimg.com/data5/SELLER/Default/2022/12/LP/QN/ML/4747417/programmable-logic-controller-repair-services.jpg",
+    duration: "20 Days ",
+    mode: "Online Live Interactive Training on ZOOM / Google meet.",
+    students: 1250,
+    lessons: 46,
+    available: "Fresh Batch Available.",
+    learningPoints: [
+      "It will upscale your skills, you will be industry ready and able to join as Instrumentation Design Engineer in any EPC companies worldwide.",
+      "Course Completion Certificate will be provided.",
+      "Placement Assistance and doubt discussion will be provided after training.",
+      "Training Materials will be provided. PLC Interview Questions & Answers",
+      "Free Study Material: PLC Programming Examples",
+      "Practical PLC example ladder logics to test your technical skills on the PLC.",
+      "Interview Assistance will be provided"
+    ],
+    modules: [
+      {
+        title: "Introduction to Industrial Control Systems",
+        lessons: 7,
+        description: "Understand the fundamental concepts of Programmable Logic Controllers and associated systems.",
+        covered: [
+          "Introduction to Industrial Control System",
+          "Programmable Logic Controller (PLC)",
+          "Overview of SCADA, DCS & RTU",
+          "Difference between DCS, PLC, and RTU?",
+          "DCS Architecture Vs PLC Architecture",
+          "What is a Human-Machine Interface (HMI)?",
+          "Essential Documents in a PLC System"
+        ]
+      },
+      {
+        title: "PLC Input/Output Cards",
+        lessons: 7,
+        description: "Explore the hardware components of PLC systems and their functionality.",
+        covered: [
+          "PLC Input/Output Modules",
+          "PLC Digital Input and Output Modules",
+          "PLC Analog I/O and Network I/O",
+          "PLC Analog Input Card Resolution Effects on Accuracy",
+          "PLC Analog Input Conversion Formula",
+          "PLC Output Types",
+          "PLC Analog I/O Potential Problems"
+        ]
+      },
+      {
+        title: "PLC Logic & Functions",
+        lessons: 8,
+        description: "Develop an understanding of PLC logic and ladder diagrams for beginners.",
+        covered: [
+          "What is a Ladder Diagram?",
+          "Introduction to PLC Ladder Diagrams",
+          "PLC Logic Functions",
+          "PLC Latching Function",
+          "PLC Multiple Outputs Configuration",
+          "Contacts and Coils",
+          "Logic Gates",
+          "PLC Program Examples"
+        ]
+      },
+      {
+        title: "PLC Hardware Design Rules",
+        lessons: 9,
+        description: "Understand standard practices for PLC wiring circuits.",
+        covered: [
+          "Basics of Switches – NO/NC Contact",
+          "What is Sinking & Sourcing?",
+          "Relay Circuits",
+          "Why Normally Closed Contact for Stop Buttons?",
+          "Basics of Fail-safe Circuits & Failsafe Wiring Practices",
+          "PLC Sinking & Sourcing Concept",
+          "PLC Signals Wiring Techniques",
+          "Basics of Permissive and Interlock Circuits",
+          "What is Interposing Relay in a PLC System?"
+        ]
+      },
+      {
+        title: "PLC Programming",
+        lessons: 8,
+        description: "Learn the fundamentals of programming PLCs using ladder diagrams.",
+        covered: [
+          "Basics of Ladder Diagram in PLC Programming",
+          "PLC Programming Languages",
+          "Basics of PLC Programming",
+          "Normally Closed Logic",
+          "PLC Timer Instructions",
+          "PLC Math Instructions",
+          "PLC Memory Mapping & I/O Addressing",
+          "PLC Ladder Logic Example"
+        ]
+      },
+      {
+        title: "PLC Application in Industrial Automation",
+        lessons: 6,
+        description: "Apply PLCs in practical industrial automation scenarios.",
+        covered: [
+          "How a PLC Reads the Data from Field Transmitters",
+          "How PLC Controls an ON/OFF Valve?",
+          "How PLC Controls a Motor?",
+          "How to Troubleshoot a PLC System",
+          "How does a PLC do the Scaling for a Sensor?"
+        ]
+      },
+      {
+        title: "Introduction to IIOT and OT Cybersecurity",
+        lessons: 1,
+        description: "Understand the basics of the Industrial Internet of Things and cybersecurity practices in operational technology."
+      }
+    ],
+    content: `The demand for skilled PLC professionals continues to grow across industries. This course not only provides you with the technical skills to operate and program PLCs but also sets you on a path to becoming a proficient automation expert. Whether you aim to optimize production lines, manage energy systems, or improve manufacturing processes, the knowledge gained here will be invaluable.` // You can keep or customize this.
+  },
+  {
+    id: 5,
+    title: "Online Live AVEVA E3D Instrumentation Training",
+    slug: "online-live-aveva-e3d-instrumentation-training",
+    description: "Join our expert-led Online Live AVEVA E3D Instrumentation Training and gain in-depth knowledge of AVEVA's powerful 3D design environment. This course is ideal for engineers, designers, and professionals working in the oil & gas, petrochemical, and industrial sectors. Learn to model, configure, and manage instrumentation layouts with precision using E3D tools. Delivered through live sessions on Zoom/Google Meet, this training combines theoretical concepts with real-world project practices to help you become job-ready.",
+    image: "https://www.aveva.com/en/training/cloud-training-center/_jcr_content/root/main_container/main-container/responsivegrid/background_container/backgroundCon/column_control/2colpar1/image/.coreimg.png/1731006559829/aveva-e3d-design-model-600x450.png",
+    duration: "30 Days",
+    mode: "Online Live Interactive Training on ZOOM / Google meet.",
+    students: 1200,
+    lessons: 18,
+    available: "Fresh Batch Available. ",
+    learningPoints: [
+      "It will upscale your skills, you will be industry ready and able to join as Instrumentation Design Engineer in any EPC companies worldwide",
+      "Course Completion Certificate will be provided.",
+      "Placement Assistance and doubt discussion will be provided after training. ",
+      "Training Materials will be provided.",
+      "Interview Assistance will be provided ",
+    ],
+    modules: [
+      {
+        title: "Instrumentation Hierarchy & Setup",
+        lessons: 3,
+        description: "Learn how to create a structured instrumentation hierarchy and manage instrument specifications and storage areas.",
+        covered: [
+          "Creating an instrumentation hierarchy",
+          "Setting up and managing default instrument specifications",
+          "Defining storage areas for instruments and data management"
+        ]
+      },
+      {
+        title: "Instrumentation Equipment Modelling",
+        lessons: 3,
+        description: "Understand how to place and configure instruments in the 3D model, including tag management and process connections.",
+        covered: [
+          "Placing and modifying instruments in the 3D model",
+          "Understanding instrument tags and attributes",
+          "Configuring process connections and fittings"
+        ]
+      },
+      {
+        title: "Cable & Tubing Routing",
+        lessons: 3,
+        description: "Master routing techniques for instrument cables and tubes, and manage connections effectively.",
+        covered: [
+          "Creating and modifying instrument cable trays and routes",
+          "Setting up tubing routes for instruments",
+          "Managing cable and tubing connections"
+        ]
+      },
+      {
+        title: "Junction Box & Marshalling Panel Configuration",
+        lessons: 3,
+        description: "Learn how to design junction boxes and marshalling panels to ensure efficient signal routing and management.",
+        covered: [
+          "Creating and positioning junction boxes",
+          "Configuring marshalling panels for efficient signal management",
+          "Managing terminal strips and connection points"
+        ]
+      },
+      {
+        title: "Instrumentation Loop Diagram Integration",
+        lessons: 3,
+        description: "Generate and verify instrumentation loop diagrams while ensuring compliance with standards.",
+        covered: [
+          "Generating and managing loop diagrams",
+          "Ensuring compliance with instrumentation standards",
+          "Verifying loop connectivity in AVEVA E3D"
+        ]
+      },
+      {
+        title: "Instrumentation Data & Reports",
+        lessons: 3,
+        description: "Extract and organize data for detailed reports including BOMs, layout, and connections.",
+        covered: [
+          "Extracting instrument data for reports",
+          "Managing bill of materials (BOM) for instrumentation systems",
+          "Generating layout and connection reports"
+        ]
+      }
+    ],
+    content: "The AVEVA E3D Instrumentation Training course provides a comprehensive understanding of designing and managing instrumentation systems using AVEVA Everything3D (E3D). Participants will gain hands-on experience in creating, modifying, and optimizing instrumentation layouts within an intelligent 3D environment. AVEVA E3D Design offers specialized training for electrical and instrumentation engineers, focusing on modelling complex equipment and associated supports. The training content typically includes: Overview of the software's interface, navigation, and basic modelling techniques. Detailed instruction on creating and editing electrical panels, fixtures, and routing cable trays and cableways. Training on integrating electrical and instrumentation designs with AVEVA Instrumentation, including cable creation and management. Guidance on generating and customizing reports from the 3D model, including drawing production and documentation."
+  },
 ];
 
 export default CourseData;

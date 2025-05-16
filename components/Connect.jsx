@@ -4,7 +4,7 @@ import { FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube, FaWhatsapp } from 'r
 
 const Connect = () => {
   return (
-    <section id="connect" className="py-16 bg-white">
+    <section id="connect" className="py-16 bg-gradient-to-br from-blue-700 via-white to-purple-600">
       <div className="container mx-auto px-4">
         
         {/* Header */}

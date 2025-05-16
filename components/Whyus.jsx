@@ -76,7 +76,7 @@ export default function WhyUs() {
   const [hoveredCard, setHoveredCard] = useState(null);
 
   return (
-    <section className="bg-gradient-to-b from-gray-50 to-white py-24 px-4 sm:px-6">
+    <section className="bg-gradient-to-br from-blue-700 via-white to-red-400 py-24 px-4 sm:px-6">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -173,7 +173,7 @@ export default function WhyUs() {
 
         {/* Stats Section */}
         <motion.div 
-          className="mt-24 bg-gradient-to-r from-purple-600 to-indigo-600 rounded-2xl p-8 sm:p-12 text-white shadow-xl"
+          className="mt-24 bg-gradient-to-br from-blue-600 via-white to-gray-300 rounded-2xl p-8 sm:p-12 text-black shadow-xl"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
@@ -186,28 +186,28 @@ export default function WhyUs() {
                 className="p-4"
               >
                 <div className="text-4xl font-bold mb-2">2,000+</div>
-                <div className="text-purple-100">Students Trained</div>
+                <div className="text-gray-900">Students Trained</div>
               </motion.div>
               <motion.div 
                 whileHover={{ scale: 1.05 }}
                 className="p-4"
               >
                 <div className="text-4xl font-bold mb-2">50+</div>
-                <div className="text-purple-100">Industry Experts</div>
+                <div className="text-gray-900">Industry Experts</div>
               </motion.div>
               <motion.div 
                 whileHover={{ scale: 1.05 }}
                 className="p-4"
               >
                 <div className="text-4xl font-bold mb-2">100%</div>
-                <div className="text-purple-100">Practical Training</div>
+                <div className="text-gray-900">Practical Training</div>
               </motion.div>
               <motion.div 
                 whileHover={{ scale: 1.05 }}
                 className="p-4"
               >
                 <div className="text-4xl font-bold mb-2">24/7</div>
-                <div className="text-purple-100">Support</div>
+                <div className="text-gray-900">Support</div>
               </motion.div>
             </div>
           </div>
