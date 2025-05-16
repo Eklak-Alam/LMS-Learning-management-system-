@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://shanayatraining.com
+
+# Sitemaps
+Sitemap: https://shanayatraining.com/sitemap.xml
