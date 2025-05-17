@@ -83,7 +83,7 @@ export default function ContactPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-white text-gray-900 px-4 py-12 pt-20">
+    <div className="min-h-screen bg-gradient-to-br from-blue-600 via-white to-red-300 text-gray-900 px-4 py-12 pt-32">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <motion.div

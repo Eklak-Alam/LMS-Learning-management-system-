@@ -1,3 +1,4 @@
+
 'use client';
 import { motion } from 'framer-motion';
 import { FaBookOpen, FaChalkboardTeacher, FaAward, FaUsers, FaRegLightbulb, FaCertificate } from 'react-icons/fa';
@@ -61,10 +62,11 @@ const staggerContainer = {
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen bg-gray-50">
-      {/* Hero Banner */}
-      <section className="relative bg-gradient-to-r from-blue-800 to-blue-600 text-white py-20">
-        <div className="absolute inset-0 bg-[url('/pattern.svg')] bg-repeat opacity-10" />
+    <div className="min-h-screen bg-gray-50 pt-10">
+      {/* Hero Banner with Enhanced Gradient */}
+      <section className="relative bg-gradient-to-br from-blue-900 via-blue-700 to-blue-500 text-white py-24">
+        <div className="absolute inset-0 bg-[url('/pattern.svg')] bg-repeat opacity-15" />
+        <div className="absolute inset-0 bg-gradient-to-r from-purple-500/10 to-teal-500/10" />
         <div className="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
           <motion.div
             initial={{ opacity: 0 }}
@@ -76,17 +78,17 @@ export default function AboutPage() {
               initial={{ scale: 0.9 }}
               animate={{ scale: 1 }}
               transition={{ delay: 0.3, duration: 0.5 }}
-              className="inline-flex items-center bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-6"
+              className="inline-flex items-center bg-white/20 backdrop-blur-sm px-5 py-2.5 rounded-full mb-8 border border-white/30"
             >
               <FaAward className="mr-2" />
-              <span>ISO 9001:2015 Certified</span>
+              <span className="font-medium">Shanaya Training Institute Pvt Ltd - ISO 9001:2015 Certified</span>
             </motion.div>
             
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="text-4xl sm:text-5xl font-bold mb-4"
+              className="text-4xl sm:text-6xl font-bold mb-6"
             >
               Shanaya Training Institute
             </motion.h1>
@@ -101,10 +103,17 @@ export default function AboutPage() {
             </motion.p>
           </motion.div>
         </div>
+        
+        {/* Decorative Elements */}
+        <div className="absolute bottom-0 left-0 w-full overflow-hidden">
+          <svg className="w-full h-16 text-gray-50 fill-current" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118.11,140.91,111.31,208.45,98.57c65.87-12.4,108-43.49,112.94-42.13Z"></path>
+          </svg>
+        </div>
       </section>
 
-      {/* About Section */}
-      <section className="py-16 px-4 sm:px-6 max-w-6xl mx-auto">
+      {/* About Section with Enhanced Design */}
+      <section className="py-20 px-4 sm:px-6 max-w-6xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -113,13 +122,14 @@ export default function AboutPage() {
             transition={{ duration: 0.8 }}
             className="relative"
           >
-            <div className="bg-blue-100 rounded-xl aspect-video overflow-hidden shadow-lg">
-              {/* Placeholder for institute image */}
-              <div className="w-full h-full bg-blue-200 flex items-center justify-center">
-                <GiGraduateCap className="w-20 h-20 text-blue-600" />
+            <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl aspect-video overflow-hidden shadow-xl border border-blue-200/50">
+              {/* Placeholder for institute image with gradient background */}
+              <div className="w-full h-full bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center relative">
+                <div className="absolute inset-0 bg-gradient-to-tr from-blue-500/5 to-purple-500/5"></div>
+                <GiGraduateCap className="w-24 h-24 text-blue-600" />
               </div>
             </div>
-            <div className="absolute -bottom-6 -right-6 bg-white p-4 rounded-lg shadow-md border border-gray-200">
+            <div className="absolute -bottom-6 -right-6 bg-white p-4 rounded-lg shadow-lg border border-gray-100">
               <div className="flex items-center">
                 <FaAward className="text-yellow-500 text-2xl mr-2" />
                 <div>
@@ -147,14 +157,14 @@ export default function AboutPage() {
             </p>
             <div className="flex flex-wrap gap-4">
               <motion.div
-                whileHover={{ y: -5 }}
-                className="bg-blue-600 text-white px-6 py-3 rounded-lg font-medium"
+                whileHover={{ y: -5, boxShadow: "0 10px 25px -5px rgba(59, 130, 246, 0.5)" }}
+                className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-7 py-3.5 rounded-lg font-medium transition-all"
               >
                 Our Courses
               </motion.div>
               <motion.div
-                whileHover={{ y: -5 }}
-                className="bg-white border border-blue-600 text-blue-600 px-6 py-3 rounded-lg font-medium"
+                whileHover={{ y: -5, boxShadow: "0 10px 25px -5px rgba(59, 130, 246, 0.25)" }}
+                className="bg-white border border-blue-600 text-blue-600 px-7 py-3.5 rounded-lg font-medium transition-all"
               >
                 Contact Us
               </motion.div>
@@ -163,14 +173,14 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Features Section */}
-      <section className="py-16 bg-white">
+      {/* Features Section with Enhanced Design */}
+      <section className="py-20 bg-gradient-to-br from-blue-900 via-white to-red-400">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            className="text-center mb-12"
+            className="text-center mb-16"
           >
             <h2 className="text-3xl font-bold text-gray-800 mb-4">
               Why Choose Shanaya?
@@ -191,10 +201,10 @@ export default function AboutPage() {
               <motion.div
                 key={i}
                 variants={fadeIn}
-                whileHover={{ y: -10 }}
-                className="bg-gray-50 rounded-xl p-8 border border-gray-200 hover:border-blue-200 transition-all"
+                whileHover={{ y: -10, boxShadow: "0 15px 30px -10px rgba(0, 0, 0, 0.1)" }}
+                className="bg-white rounded-xl p-8 border border-gray-100 hover:border-blue-200 transition-all shadow-sm"
               >
-                <div className="bg-blue-100 w-14 h-14 rounded-full flex items-center justify-center mb-6">
+                <div className="bg-gradient-to-br from-blue-50 to-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
                   {feature.icon}
                 </div>
                 <h3 className="text-xl font-bold text-gray-800 mb-3">
@@ -209,78 +219,64 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Leadership Section */}
-      <section className="py-16 bg-gray-50">
+      {/* Leadership Section - Single Founder Card */}
+      <section className="py-20 bg-gradient-to-br from-blue-600 via-white to-red-300">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            className="text-center mb-12"
+            className="text-center mb-16"
           >
             <h2 className="text-3xl font-bold text-gray-800 mb-4">
               Our Leadership
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Meet the visionaries behind Shanaya's success
+              Meet the visionary behind Shanaya's success
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="bg-white rounded-xl p-8 shadow-sm border border-gray-200 flex flex-col md:flex-row items-center text-center md:text-left gap-6"
-            >
-              <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-blue-100">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="max-w-3xl mx-auto"
+          >
+            <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-10 shadow-lg border border-blue-200/50 flex flex-col items-center text-center gap-8">
+              <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-white shadow-md">
                 <img 
                   src="https://randomuser.me/api/portraits/men/60.jpg" 
-                  alt="Director" 
+                  alt="Founder" 
                   className="w-full h-full object-cover"
                 />
               </div>
               <div>
-                <h3 className="text-xl font-bold text-gray-800 mb-1">
-                  Rajesh Sharma
+                <h3 className="text-2xl font-bold text-gray-800 mb-1">
+                  Saurabh Sharma
                 </h3>
-                <p className="text-blue-600 font-medium mb-3">
+                <p className="text-blue-600 font-medium mb-5">
                   Founder & Director
                 </p>
-                <p className="text-gray-600">
-                  "Our mission is to bridge the gap between education and employment through quality training programs."
-                </p>
+                <div className="max-w-xl mx-auto">
+                  <p className="text-gray-600 text-lg italic">
+                    "Our mission is to bridge the gap between education and employment through quality training programs. We continuously update our curriculum to meet the evolving needs of industries."
+                  </p>
+                </div>
+                
+                <div className="mt-8 flex justify-center space-x-4">
+                  <div className="flex items-center bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full shadow-sm">
+                    <FaAward className="text-yellow-500 mr-2" />
+                    <span className="text-sm font-medium">15+ Years Experience</span>
+                  </div>
+                  <div className="flex items-center bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full shadow-sm">
+                    <FaUsers className="text-blue-500 mr-2" />
+                    <span className="text-sm font-medium">20,000+ Students</span>
+                  </div>
+                </div>
               </div>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.2, duration: 0.6 }}
-              className="bg-white rounded-xl p-8 shadow-sm border border-gray-200 flex flex-col md:flex-row items-center text-center md:text-left gap-6"
-            >
-              <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-blue-100">
-                <img 
-                  src="https://randomuser.me/api/portraits/women/45.jpg" 
-                  alt="Academic Head" 
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div>
-                <h3 className="text-xl font-bold text-gray-800 mb-1">
-                  Priya Patel
-                </h3>
-                <p className="text-blue-600 font-medium mb-3">
-                  Academic Head
-                </p>
-                <p className="text-gray-600">
-                  "We continuously update our curriculum to meet the evolving needs of industries."
-                </p>
-              </div>
-            </motion.div>
-          </div>
+            </div>
+          </motion.div>
         </div>
       </section>
     </div>
