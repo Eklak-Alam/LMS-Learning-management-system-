@@ -99,7 +99,7 @@ export default function Navbar() {
       initial="hidden"
       animate="visible"
       variants={navbarVariants}
-      className={`fixed top-0 left-0 w-full z-50 px-4 md:px-8 py-4 transition-all duration-300 ${scrolled ? 'bg-gradient-to-r from-blue-900 to-blue-700 shadow-xl' : 'bg-gradient-to-r from-blue-900 to-blue-700'}`}
+      className={`fixed top-0 left-0 w-full z-50 px-4 md:px-8 py-4 transition-all duration-300 ${scrolled ? 'bg-gradient-to-r from-gray-900 to-violet-900 shadow-xl' : 'bg-gradient-to-r from-gray-900 to-violet-700'}`}
     >
       <div className="max-w-8xl mx-auto flex items-center justify-between">
         {/* Logo with full name and ISO */}

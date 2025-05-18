@@ -59,7 +59,7 @@ const Process = () => {
   const [hoveredStep, setHoveredStep] = useState(null);
 
   return (
-    <section id="process" className="py-24 bg-gradient-to-br from-blue-600 via-white to-gray-300">
+    <section id="process" className="py-24 bg-gradient-to-br from-violet-600 via-white to-gray-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         {/* Header Section */}
         <motion.div

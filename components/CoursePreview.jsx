@@ -64,7 +64,7 @@ const CoursePreview = () => {
   };
 
   return (
-    <section className="py-12 px-4 sm:px-6 bg-gradient-to-br from-blue-600 via-white to-red-200">
+    <section className="py-12 px-4 sm:px-6 bg-gradient-to-br from-violet-600 via-red-200 to-gray-200">
       <div className="max-w-7xl mx-auto">
         {/* Institute Header */}
         <div className="text-center mb-12">

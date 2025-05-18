@@ -64,7 +64,7 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen bg-gray-50 pt-10">
       {/* Hero Banner with Enhanced Gradient */}
-      <section className="relative bg-gradient-to-br from-blue-900 via-blue-700 to-blue-500 text-white py-24">
+      <section className="relative bg-gradient-to-br from-violet-900 via-violet-700 to-violet-500 text-white py-24">
         <div className="absolute inset-0 bg-[url('/pattern.svg')] bg-repeat opacity-15" />
         <div className="absolute inset-0 bg-gradient-to-r from-purple-500/10 to-teal-500/10" />
         <div className="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">

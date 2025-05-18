@@ -1,8 +1,30 @@
 'use client'
+
 import { motion } from 'framer-motion'
 import { Play, Star, Users } from 'lucide-react'
+import Link from 'next/link';
 
 const Trusted = () => {
+
+  const ArrowIcon = () => (
+    <motion.svg
+      className="w-5 h-5 ml-2"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      initial={{ x: 0 }}
+      animate={{ x: [0, 5, 0] }}
+      transition={{ duration: 1.5, repeat: Infinity }}
+    >
+      <motion.path
+        d="M5 12H19M19 12L12 5M19 12L12 19"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </motion.svg>
+  );
 
   return (
     <section className="relative py-24 px-4 sm:px-6 bg-white text-gray-900">
@@ -91,28 +113,18 @@ const Trusted = () => {
           </motion.p>
 
           {/* CTA Button */}
-          <motion.button
-            whileHover={{
-              scale: 1.05,
-              boxShadow: "0 10px 25px -5px rgba(139, 92, 246, 0.4)"
-            }}
-            whileTap={{ scale: 0.97 }}
-            className="px-8 py-4 bg-gradient-to-r from-purple-600 to-indigo-500 text-white rounded-lg font-semibold shadow-md flex items-center transition"
-          >
-            <a href='/courses'>Get Started</a>
-            <svg className="w-5 h-5 ml-2" viewBox="0 0 24 24" fill="none">
-              <motion.path
-                d="M5 12H19M19 12L12 5M19 12L12 19"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                initial={{ pathLength: 0 }}
-                animate={{ pathLength: 1 }}
-                transition={{ duration: 1.5, repeat: Infinity }}
-              />
-            </svg>
-          </motion.button>
+          <Link href='/courses' passHref>
+            <motion.button
+              whileHover={{
+                scale: 1.05,
+                boxShadow: "0 10px 25px -5px rgba(139, 92, 246, 0.4)"
+              }}
+              whileTap={{ scale: 0.97 }}
+              className="px-8 py-4 bg-gradient-to-r from-purple-600 to-indigo-500 text-white rounded-lg font-semibold shadow-md flex items-center transition"
+            > Get Started
+              <ArrowIcon />
+            </motion.button>
+          </Link>
         </motion.div>
       </div>
       
