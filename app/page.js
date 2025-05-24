@@ -1,5 +1,6 @@
 import Connect from "@/components/Connect";
 import CoursePreview from "@/components/CoursePreview";
+import FAQSection from "@/components/Faqs";
 import LandingPage from "@/components/LandingPage";
 import Process from "@/components/Process";
 import Trusted from "@/components/Trusted";
@@ -15,8 +16,8 @@ export default function Home() {
       <WhyUs />
       <Process />
       <Trusted />
+      <FAQSection />
       <Connect />
-      
       {/* WhatsApp floating button */}
       <WhatsAppFloat />
     </main>
