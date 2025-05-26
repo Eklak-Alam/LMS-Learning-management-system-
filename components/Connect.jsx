@@ -183,7 +183,7 @@ const Connect = () => {
               type="button"
               className="bg-blue-600 hover:bg-blue-700 text-white px-6 rounded-r-lg transition-all duration-300 transform hover:scale-[1.02]"
             >
-              Subscribe please
+              Subscribe
             </button>
           </div>
         </motion.div>
