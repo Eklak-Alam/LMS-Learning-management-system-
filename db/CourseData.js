@@ -524,6 +524,377 @@ const CourseData = [
     ],
     content: "The AVEVA E3D Instrumentation Training course provides a comprehensive understanding of designing and managing instrumentation systems using AVEVA Everything3D (E3D). Participants will gain hands-on experience in creating, modifying, and optimizing instrumentation layouts within an intelligent 3D environment. AVEVA E3D Design offers specialized training for electrical and instrumentation engineers, focusing on modelling complex equipment and associated supports. The training content typically includes: Overview of the software's interface, navigation, and basic modelling techniques. Detailed instruction on creating and editing electrical panels, fixtures, and routing cable trays and cableways. Training on integrating electrical and instrumentation designs with AVEVA Instrumentation, including cable creation and management. Guidance on generating and customizing reports from the 3D model, including drawing production and documentation."
   },
+  {
+    id: 6,
+    title: "S3D Piping & Equipment Design",
+    slug: "s3d-piping-equipment",
+    description: "A comprehensive training on Smart 3D (S3D) software covering piping, equipment, supports, drafting, and space management.",
+    image: "https://www.rishabheng.com/wp-content/uploads/2018/06/pipingdesignsoftware.jpg",
+    duration: "30 Days",
+    mode: "Online Live Interactive Training on ZOOM / Google meet.",
+    students: 500,
+    lessons: 40,
+    available: "Fresh Batch Available. ",
+    learningPoints: [
+      "It will upscale your skills, you will be industry ready and able to join as Instrumentation Design Engineer in any EPC companies worldwide",
+      "Course Completion Certificate will be provided.",
+      "Placement Assistance and doubt discussion will be provided after training. ",
+      "Training Materials will be provided.",
+      "Interview Assistance will be provided ",
+    ],
+    modules: [
+    {
+      title: "Getting Started with S3D",
+      lessons: 5,
+      description: "Learn the basics of Smart 3D (S3D), workspace creation, and user interface.",
+      covered: [
+        "Modifying Database and server location",
+        "Opening S3D and defining units",
+        "Defining workspace and filters",
+        "Using basic tools like Undo, Copy, Paste, Move, Rotate, Mirror",
+        "Using View tools: Zoom, Pan, Format View, View Orientation"
+      ]
+    },
+    {
+      title: "Common S3D Features and Tools",
+      lessons: 4,
+      description: "Understand SmartSketch, clipping tools, reports, and navigation in S3D.",
+      covered: [
+        "SmartSketch Options and PinPoint usage",
+        "Measure, Show/Hide Objects, Surface Style Rules",
+        "Run Reports, Snapshot View, Drawing Console",
+        "Custom Commands, WBS Assignment, Cascade, Tile Views"
+      ]
+    },
+    {
+      title: "Equipment Module",
+      lessons: 6,
+      description: "Create and edit rotating and process equipment in S3D.",
+      covered: [
+        "Creating Equipment System Hierarchy",
+        "Placing Pumps, Air Coolers, Heat Exchangers",
+        "Creating Horizontal & Vertical Vessels",
+        "Adding Shapes and Nozzles with attributes",
+        "Modifying Equipment and Nozzles",
+        "Editing Coordinates and Using PinPoint"
+      ]
+    },
+    {
+      title: "Piping Module",
+      lessons: 8,
+      description: "Design complete piping systems with hierarchy, routing, and clash checks.",
+      covered: [
+        "Creating piping system and line numbers",
+        "Routing pipes using pin point and components",
+        "Pipe insert splitting and weld types",
+        "Adding flow arrows and shop material specs",
+        "Insert instruments and specialty components",
+        "Reducer and tap insertion",
+        "Spool generation and slope piping",
+        "Quick routing and sequencing objects"
+      ]
+    },
+    {
+      title: "Hangers and Supports Module",
+      lessons: 2,
+      description: "Design and place supports using structure or reference points.",
+      covered: [
+        "Placing supports by structure or reference",
+        "Designing supports using structure or specific points"
+      ]
+    },
+    {
+      title: "ISODRAFT Module",
+      lessons: 5,
+      description: "Generate isometric drawings and outputs using ISODRAFT tools.",
+      covered: [
+        "Isometric Drawings by Query",
+        "Isometric Style Tasks and Output Formats",
+        "Customizing Drawing Sheets",
+        "Plotting to PDF, DWG, and DGN formats",
+        "Creating complete system isometrics"
+      ]
+    },
+    {
+      title: "Space Management Module",
+      lessons: 4,
+      description: "Manage 3D spaces and volumes within your project structure.",
+      covered: [
+        "Creating Space Folders and Objects",
+        "Associating Volumes and Assigning Parents",
+        "Modifying Space Properties",
+        "Space Management Workflow Overview"
+      ]
+    },
+    {
+      title: "Layout Module",
+      lessons: 6,
+      description: "Generate orthographic drawings and configure drawing templates.",
+      covered: [
+        "Creating Sheets, Views, and Volume Drawings",
+        "Adding Elements to 3D View",
+        "Adjusting View Frames, Scale, and Center",
+        "Creating Section Planes",
+        "Generating DXF/DWG Outputs",
+        "Adding Dimensions and Text"
+      ]
+    }
+  ],    
+  content: "This comprehensive S3D (Smart 3D) Piping & Equipment course is designed to provide in-depth training on the use of Intergraph Smart 3D for piping design and equipment modeling. The course covers the complete workflow, including setting up the workspace, using SP3D tools for routing, equipment placement, clash checking, and generating isometric and orthographic drawings. Students will gain hands-on experience with real-world scenarios in the equipment, piping, hangers & supports, and ISODRAFT modules. By the end of the course, learners will be equipped to efficiently handle 3D plant design tasks in a professional environment."
+  },
+  {
+    id: 7,
+    title: "AutoCAD Electrical Training",
+    slug: "autocad-electrical-training",
+    description: "Master AutoCAD Electrical from basic to advanced level, including schematics, panel drawings, PLC symbols, and project management.",
+    image: "https://caddeskhyderabad.com/wp-content/uploads/2023/07/AutoCAD-Electrical-Course-768x479.jpg",
+    duration: "30 Days",
+    mode: "Online Live Interactive Training via ZOOM / Google Meet",
+    students: 800,
+    lessons: 27,
+    available: "Fresh Batch Available. ",
+    learningPoints: [
+      "Gain practical industry-oriented skills for Electrical Design Engineering using AutoCAD Electrical.",
+      "Get certified with a course completion certificate from an ISO 9001:2015 Certified Company.",
+      "Individual doubt-clearing sessions and personalized mentorship.",
+      "Hands-on training from experienced industry professionals.",
+      "Placement and Interview preparation assistance."
+    ],
+    modules: [
+      {
+        title: "Introduction to AutoCAD Electrical",
+        lessons: 2,
+        description: "Get familiar with the interface and basics of electrical drawings.",
+        covered: [
+          "Working with the User Interface",
+          "Types of Electrical Drawings",
+          "Electrical Components and Wires"
+        ]
+      },
+      {
+        title: "Project Files",
+        lessons: 2,
+        description: "Manage project files and drawings efficiently.",
+        covered: [
+          "Project Manager Interface",
+          "Opening and Creating Drawings",
+          "Managing Drawings in Projects"
+        ]
+      },
+      {
+        title: "Schematics I – Single Wire/Components",
+        lessons: 3,
+        description: "Learn to create single-wire schematics using core AutoCAD tools.",
+        covered: [
+          "Ladders, Wires and Rungs",
+          "Wire Setup and Numbering",
+          "Source & Destination Signal Arrows",
+          "Parent /Child Components"
+        ]
+      },
+      {
+        title: "Schematics II – Multiwire and Circuits",
+        lessons: 3,
+        description: "Advanced schematic tools including circuit builder and phase ladders.",
+        covered: [
+          "Dashed Link Lines",
+          "Phase Ladders and Circuits",
+          "Cable Markers and Fan In/Out",
+          "Circuit Builder"
+        ]
+      },
+      {
+        title: "Editing Commands",
+        lessons: 3,
+        description: "Modify and organize components with powerful editing tools.",
+        covered: [
+          "Editing Components",
+          "Surfer Command",
+          "Catalogue Assignments",
+          "Installation/Location Code Values"
+        ]
+      },
+      {
+        title: "Panel Drawings",
+        lessons: 3,
+        description: "Design and organize electrical panel layouts.",
+        covered: [
+          "Insert Footprint and Components",
+          "Editing Footprint",
+          "Assign Item Numbers and Balloons"
+        ]
+      },
+      {
+        title: "Terminals and PLC Symbols",
+        lessons: 3,
+        description: "Work with terminals and PLC modules in projects.",
+        covered: [
+          "Terminal Strip Editor",
+          "Insert PLC I/O Modules",
+          "Customize PLC Symbols"
+        ]
+      },
+      {
+        title: "Point-to-Point Wiring Drawings",
+        lessons: 2,
+        description: "Develop clean wiring schematics for point-to-point layouts.",
+        covered: [
+          "Create Point-to-Point Wiring Diagrams",
+          "Assign Wire Tags and Labels"
+        ]
+      },
+      {
+        title: "Symbol and Title Block Creation",
+        lessons: 2,
+        description: "Customize and create standard symbols and title blocks.",
+        covered: [
+          "Create Custom Symbols",
+          "Develop and Insert Title Blocks"
+        ]
+      },
+      {
+        title: "Reports, Settings and Templates",
+        lessons: 4,
+        description: "Utilize AutoCAD Electrical’s reporting and customization features.",
+        covered: [
+          "Using Reporting Tools",
+          "Updating Drawings",
+          "Settings and Templates",
+          "Final Project Setup and Review"
+        ]
+      }
+    ],
+    content: "This in-depth AutoCAD Electrical Training course is structured to take learners from the very basics to advanced functionality in electrical design using AutoCAD. You'll explore project setup, single and multiwire schematics, PLC integration, panel layouts, and symbol creation. With real-world project simulation and interactive live sessions, you'll be equipped with industry-relevant skills. Delivered by experienced engineers and supported by personalized doubt sessions and flexible timings, this program prepares you for a successful career in Electrical Design Engineering."
+  },
+  {
+    id: 8,
+    title: "AutoCAD Instrumentation Training",
+    slug: "autocad-instrumentation-training",
+    description: "Master AutoCAD for Instrumentation from scratch, covering interface navigation, drawing tools, layering, advanced editing, and practical projects tailored for Instrumentation Design Engineering.",
+    image: "https://damassets.autodesk.net/content/dam/autodesk/draftr/7836/what-is-pid-thumb-1172x660_jpg.jpg", // Replace with actual course image URL
+    duration: "30 Days",
+    mode: "Online Live Interactive Training via ZOOM / Google Meet",
+    students: 600,
+    lessons: 24,
+    available: "Fresh Batch Available.",
+    learningPoints: [
+      "Develop core AutoCAD skills focused on Instrumentation drawings.",
+      "Certified training from an ISO 9001:2015 Certified Company.",
+      "Individual doubt-clearing sessions and career-oriented mentorship.",
+      "Hands-on training from working design professionals.",
+      "Placement and Interview preparation assistance included."
+    ],
+    modules: [
+      {
+        title: "Getting Started with AutoCAD",
+        lessons: 3,
+        description: "Understand the AutoCAD interface and start working with basic tools.",
+        covered: [
+          "Opening and Creating Drawings",
+          "Exploring AutoCAD Interface",
+          "User Interface & Commands",
+          "Zooming, Panning, Cartesian Workspace"
+        ]
+      },
+      {
+        title: "Basic Drawing & Editing Commands",
+        lessons: 3,
+        description: "Learn to draw and edit using essential AutoCAD tools.",
+        covered: [
+          "Lines, Circles, Rectangles",
+          "Erasing & Drawing Objects",
+          "Undo and Redo Actions",
+          "Working with Mouse & Keyboard"
+        ]
+      },
+      {
+        title: "Projects - Creating a Simple Drawing",
+        lessons: 2,
+        description: "Apply your skills to create a basic instrumentation drawing.",
+        covered: [
+          "Object Snap Tracking",
+          "Projected Views",
+          "Modify Tools Application"
+        ]
+      },
+      {
+        title: "Making Changes in Your Drawing",
+        lessons: 2,
+        description: "Modify your drawings using fundamental editing tools.",
+        covered: [
+          "Move, Copy, Rotate, Mirror",
+          "Scale with Reference Option"
+        ]
+      },
+      {
+        title: "Organizing Your Drawing with Layers",
+        lessons: 2,
+        description: "Structure your drawings effectively using layers.",
+        covered: [
+          "Creating and Managing Layers",
+          "Layer States and Tools",
+          "Properties by Layer"
+        ]
+      },
+      {
+        title: "Advanced Object Types",
+        lessons: 2,
+        description: "Work with more complex AutoCAD objects.",
+        covered: [
+          "Polylines, Arcs, Polygons",
+          "Ellipses"
+        ]
+      },
+      {
+        title: "Advanced Editing Commands",
+        lessons: 3,
+        description: "Enhance and manipulate objects with advanced tools.",
+        covered: [
+          "Trim, Extend, Offset",
+          "Fillet, Chamfer, Join",
+          "Polyline Edit and Spline"
+        ]
+      },
+      {
+        title: "Printing Your Drawing",
+        lessons: 1,
+        description: "Learn how to print layouts and model views properly.",
+        covered: [
+          "Printing from Layout and Model Tabs"
+        ]
+      },
+      {
+        title: "Text in AutoCAD",
+        lessons: 2,
+        description: "Add and format text effectively in AutoCAD drawings.",
+        covered: [
+          "Multiline and Single Line Text",
+          "Editing Text and Multileaders",
+          "Model Space vs. Paper Space Text"
+        ]
+      },
+      {
+        title: "Hatching",
+        lessons: 2,
+        description: "Apply hatch patterns and use hatching tools.",
+        covered: [
+          "Hatch Command and Editor",
+          "Saving and Using Hatch Palettes"
+        ]
+      },
+      {
+        title: "Adding Dimensions",
+        lessons: 2,
+        description: "Apply accurate dimensions in your drawings.",
+        covered: [
+          "Dimension Tools and Styles",
+          "Model vs. Layout Dimensioning"
+        ]
+      }
+    ],
+    content: "This Online AutoCAD Instrumentation Training is crafted to empower learners with essential drafting and design skills in the instrumentation field using AutoCAD. From interface fundamentals to advanced editing, layering, dimensioning, and layout practices, the course blends theoretical concepts with real-world drawing simulations. Taught by industry professionals, it ensures each participant is prepared to work in Instrumentation Design roles, backed by ISO-certified certification and complete placement support."
+  }
+
 ];
 
 export default CourseData;
