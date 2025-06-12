@@ -1,6 +1,6 @@
 'use client'
 import { motion } from 'framer-motion'
-import { ArrowLeft, Clock, BookOpen, BarChart2, Users, Check, Zap, Award, Video, Mail, Phone } from 'lucide-react'
+import { ArrowLeft, Clock, BookOpen, Users, Check, Zap, Award, Video, Mail, Phone } from 'lucide-react'
 import { useRouter } from 'next/navigation'
 import CourseData from '@/db/CourseData'
 import { use } from 'react';
