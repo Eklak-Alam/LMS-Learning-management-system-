@@ -18,8 +18,6 @@ export default function Home() {
       <Trusted />
       <FAQSection />
       <Connect />
-      {/* WhatsApp floating button */}
-      <WhatsAppFloat />
     </main>
   );
 }

@@ -2,6 +2,7 @@ import { Analytics } from "@vercel/analytics/react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import "./globals.css";
+import WhatsAppFloat from "@/components/WhatsAppFloat";
 
 
 // ✅ SEO Metadata
@@ -14,7 +15,7 @@ export const metadata = {
   authors: [{ name: "Shanaya Training Institute", url: "https://shanayatraining.com/" }],
   creator: "Shanaya Training Institute",
   openGraph: {
-    title: "Shanaya Training Institute | Certified Industrial & IT Skill Courses",
+    title: "Shanaya Training Institute | Learn Design Engineering Skill Online Live and Grow Your Career",
     description:
       "Upskill with Shanaya Training Institute’s certified programs in Industrial Automation, PLC, Digital Marketing, and more. Practical live training, industry-relevant curriculum, and placement assistance.",
     url: "https://shanayatraining.com/",
@@ -58,6 +59,12 @@ export default function RootLayout({ children }) {
         <meta name="msapplication-TileColor" content="#ffffff" />
         <meta name="msapplication-TileImage" content="/favicon-32x32.png" />
         
+        <meta property="og:title" content="Shanaya Training Institute | Certified Industrial & IT Skill Courses" />
+        <meta property="og:description" content="Upskill with Shanaya Training Institute’s certified programs..." />
+        <meta property="og:image" content="https://shanayatraining.com/favicon.ico" />
+        <meta property="og:url" content="https://shanayatraining.com/" />
+
+        
         {/* Other meta tags */}
         <meta name="google-site-verification" content="LrkpdjhX9cSJh782MW0R4wZEkppXnwc_NEaz30avcsQ" />
         <meta charSet="UTF-8" />
@@ -98,6 +105,7 @@ export default function RootLayout({ children }) {
       <body>
         <Navbar />
         {children}
+        <WhatsAppFloat />
         <Footer />
         <Analytics />
       </body>
