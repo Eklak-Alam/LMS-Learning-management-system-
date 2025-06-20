@@ -58,11 +58,13 @@ export default function RootLayout({ children }) {
         <meta name="theme-color" content="#ffffff" />
         <meta name="msapplication-TileColor" content="#ffffff" />
         <meta name="msapplication-TileImage" content="/favicon-32x32.png" />
-        
-        <meta property="og:title" content="Shanaya Training Institute | Certified Industrial & IT Skill Courses" />
-        <meta property="og:description" content="Upskill with Shanaya Training Institute’s certified programs..." />
+
+
+        <meta property="og:title" content="Shanaya Training Institute | Learn Design Engineering Skill Online Live and Grow Your Career" />
+        <meta property="og:description" content="Join Shanaya Training Institute for live, hands-on certified programs in Design Engineering, PLC, Automation, and Digital Marketing. Flexible schedules, expert instructors, and placement assistance to grow your career." />
         <meta property="og:image" content="https://shanayatraining.com/favicon.ico" />
         <meta property="og:url" content="https://shanayatraining.com/" />
+
 
         
         {/* Other meta tags */}
