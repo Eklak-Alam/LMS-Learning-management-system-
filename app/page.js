@@ -9,7 +9,7 @@ import WhyUs from "@/components/Whyus";
 
 // ✅ HOME PAGE METADATA - OPTIMIZED FOR "ENGINEERING TRAINING" KEYWORDS
 export const metadata = {
-  title: "Best Engineering Design Training Institute | PLC, Automation, Web Development Courses",
+  title: "Shanaya Training Institute Pvt Ltd | Best Online Engineering Design Skill Training Institute | PLC, Automation, Web Development Courses",
   description: "Join India's top-rated Engineering Training Institute. Live online courses in PLC Programming, Industrial Automation, Web Development, Digital Marketing with 100% placement assistance. Learn from MNC experts.",
   keywords: "engineering training, PLC programming, industrial automation, web development course, digital marketing training, CAD training, mechanical design, electrical engineering, online courses with placement",
   openGraph: {
